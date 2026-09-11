@@ -1,0 +1,1 @@
+This is a set of notes about Ultra-fast photo conductivity phenomena with a focus on the experimental measurement using photocurrent correlation.

@@ -1,0 +1,274 @@
+{
+  "main": {
+    "id": "92a30cbf3f9c2d87",
+    "type": "split",
+    "children": [
+      {
+        "id": "6467bfdeffaad7be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "01c8a7da0fd7b39e",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "b9e3d820db9b14eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lit-revieuw.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lit-revieuw"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "c0f22a00ec308549",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "94d15ec629e0693c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Summaries/Ultrafast Spectroscopy with Photocurrent detection.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ultrafast Spectroscopy with Photocurrent detection"
+            }
+          },
+          {
+            "id": "cb9e713ece4a1756",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Operando Spectroscopy and Non-Equilibrium Carrier Dynamics in Low-Dimensional Optoelectronic and Photocolatic Materials.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Operando Spectroscopy and Non-Equilibrium Carrier Dynamics in Low-Dimensional Optoelectronic and Photocolatic Materials"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d447131d2b46635a",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e2a7f025a7de266",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11413b3d27aa44a5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9e31f9e3e173e6e9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "be1c7c0069c4b857",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7066385d0f55bd54",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a0ad7a9bf0c2c06",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f514196857320328",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Summaries/Picosecond Photoresponse in vd Waals Hetrostructures.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Picosecond Photoresponse in vd Waals Hetrostructures"
+            }
+          },
+          {
+            "id": "fd7d2c71ea0e7a0e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Summaries/Picosecond Photoresponse in vd Waals Hetrostructures.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Picosecond Photoresponse in vd Waals Hetrostructures"
+            }
+          },
+          {
+            "id": "fbfe30ed4ecb5298",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "365c38e0ae601a15",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "b26f68aca58c7db0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Summaries/Picosecond Photoresponse in vd Waals Hetrostructures.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Picosecond Photoresponse in vd Waals Hetrostructures"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "b9e3d820db9b14eb",
+  "lastOpenFiles": [
+    "Operando Spectroscopy and Non-Equilibrium Carrier Dynamics in Low-Dimensional Optoelectronic and Photocolatic Materials.md",
+    "Lit-revieuw.md",
+    "Summaries/Ultrafast Spectroscopy with Photocurrent detection.md",
+    "Ultrafast photoconductivity phenomena.md",
+    "Summaries/_Overview of Summaries.md",
+    "Modeling.md",
+    "Summaries/Ultrafast vibrational control of organohalide perovskite optoelectronic devices using vibrationally promoted electronic resonance.md",
+    "Journals.md",
+    "Electron gass.md",
+    "Experimental.md",
+    "Summaries/Mode-selective vibrational control of charge transport in PI-conjugated molecular materials.md",
+    "Summaries/Photothermal effects control ultrafast charge transport in titanium carbide MXenes.md",
+    "img/result.png",
+    "img/SetupTielrooij.png",
+    "img/setup.png",
+    "img/TempResponseTielrooij.png",
+    "img/YeTaovdWaalsResult.png",
+    "img/YeTaovdWaalsSetup.png",
+    "img/twoPulses.png",
+    "Summaries/In situ and real-time ultrafast spectroscopy of photoinduced reactions in perovskite nanomaterials.md",
+    "Summaries/The Role of Driving Energy and Delocalized States for Charge Seperation in Organic Semiconductors.md",
+    "Summaries/Ultrafast Photoconductivity in 2D van der Waals Hetro structure.md",
+    "Summaries/Picosecond Photoresponse in vd Waals Hetrostructures.md",
+    "Summaries/Generation of photovoltage in graphene on a femtosecond timescale through efficient carrier heating.md",
+    "img/Bauklinmechanisms.png",
+    "img/pentaceneBG.png",
+    "img/BakulinSetup.png",
+    "Questions/Q1.md",
+    "Questions/Q3.md",
+    "Questions/Q2.md",
+    "Summaries",
+    "img",
+    "papers/nnano.2015.54.pdf",
+    "papers",
+    "nnano.2015.54.pdf",
+    "Questions.md",
+    "Questions"
+  ]
+}
