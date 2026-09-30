@@ -1,0 +1,3 @@
+/home/brm/UltrafastPhotoCurrentSpectroscopy/Simulations/test/CMakeFiles/test.dir
+/home/brm/UltrafastPhotoCurrentSpectroscopy/Simulations/test/CMakeFiles/edit_cache.dir
+/home/brm/UltrafastPhotoCurrentSpectroscopy/Simulations/test/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+cd simulation/build
+
+make
