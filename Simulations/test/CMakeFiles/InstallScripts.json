@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/brm/UltrafastPhotoCurrentSpectroscopy/Simulations/test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,21 @@
+SourceSettings:
+  tau:                  100  # fs
+  Power:                0.1  # W
+  f_rep:                1000 # Hz
+  thickness:            20   # nm
+  t_0:                  2    # ps
+  w01:                  5    # mm
+  w02:                  1    # mm
+  penetration_depth:    15   # nm
+MaterialFiles:
+  heat_capacity_file:   "/home/brm/UltrafastPhotoCurrentSpectroscopy/Simulations/TTM/MaterialData/heat_cap.dat"
+  ep_coupling_file:    "/home/brm/UltrafastPhotoCurrentSpectroscopy/Simulations/TTM/MaterialData/ep_coupling.dat"
+
+SimulationSettings:
+  t_start:              0     # ps
+  t_end:                50    # ps
+  dt:                   0.05  # fs
+  Dt_start:             -50   # ps
+  Dt_end:               50    # ps
+  dDt:                  500   # fs
+  out_file:             "/home/brm/UltrafastPhotoCurrentSpectroscopy/Simulations/TTM/output/out.dat"
