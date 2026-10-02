@@ -5,7 +5,6 @@ SourceSettings:
   thickness:            20   # nm
   t_0:                  2    # ps
   w01:                  5    # mm
-  w02:                  1    # mm
   penetration_depth:    15   # nm
 MaterialFiles:
   heat_capacity_file:   "/home/brm/UltrafastPhotoCurrentSpectroscopy/Simulations/TTM/MaterialData/heat_cap.dat"

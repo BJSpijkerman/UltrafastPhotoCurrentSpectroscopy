@@ -3,13 +3,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-df = pd.read_csv("../MaterialData/heat_cap.dat", sep=r"\s+", names=["Te", "Ce"])
+df = pd.read_csv("MaterialData/heat_cap.dat", sep=r"\s+", names=["Te", "Ce"])
 
 Te = df["Te"].to_numpy() * 1e4
 Ce = df["Ce"].to_numpy() * 1e5
 
 #Sommerfeld expansion approximation
-gamma = 70
+gamma = 70	# Sommerfeld coefficient volumetric heat capacity
 T = np.linspace(300, 3000, 10*4)
 C = gamma * T
 

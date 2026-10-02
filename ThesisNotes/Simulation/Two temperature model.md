@@ -92,3 +92,16 @@ $$
 T_{\text{eq},2}=\frac{-C_{\text{l}}-\sqrt{C_{\text{l}}^2+2\gamma\left(E_{\text{vol}}+\gamma T_0/2+C_{\text{l}}T_0\right)}}{\gamma}=-71.73\,\text{K},
 $$
 where T_{\text{eq},2} is the negative value and rejected and $T_{\text{eq}, 1}$ is the accepted positive value. The lattice temperature should thus rise by about $3-4\,\text{K}$, which is does as shown in the figure.
+
+### Conductivity changes
+To model changes in the gold conductivity we use the expression for the DC conductivity derrived from the Drude-Lorents model
+$$
+\sigma = \frac{e^2n_{\text{sp}}(T_{\text{e}})}{m_{\text{sp}}\nu_{\text{tot}}},
+$$
+where $e$ is the electron charge $1.602\cdot10^{-19}\,\text{C}$, $n_{\text{sp}}(T_{\text{e}})$ the temperature dependent occupation of the sp-band, $m_{\text{sp}}$ the electron band mass and $\nu_{\text{tot}}$ the scattering rate. For the electron density in the sp-band we assumed that the fluence was low enough to not significantly change the sp-band occupation which is valid for electron temperatures under $\approx3000\,\text{K}$. Thus the electron density is calculated to be $5.9\cdot10^{22}\,\text{cm}^{-3}$ by considering the FCC structure and density of gold together with the fact that each atom carries $1$ sp-electron. The effective band mass is taken to be the rest mass of the electron $9.109\cdot10^{-31}\,\text{kg}$ since the electrons are nearly free and the total scattering time is formulated using,
+$$
+\nu_{\text{tot}}=AT_{\text{ph}},
+$$
+where $A=0.084/300\,(\text{fsK})^{-1}$, taken from REFERENCE this source also includes d-band corrections proportional to $T_{\text{e}}^2$. This correction is due to the d-band electrons being excited to the sp-band, increasing the electron-electron scattering rate to significant proportions, but these are not needed below $3000\,\text{K}$ and are thus not included in the model.
+![[TTMresultResistivity.png]]
+From this image the expected resistivity value is on the order of $10^{-8}$ with a bias current of $\approx100\,\text{mA}$ and contact separation on the order of millimeters this would produce a maximum on the order of pico volts. <span style="color: pink;">Which is very sad!!!</span> 
