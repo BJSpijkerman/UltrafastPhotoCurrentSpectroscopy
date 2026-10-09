@@ -1,0 +1,171 @@
+2026-10-09 14:17:44 [ERROR] AsyncRS232Client.py:53 - Failed to open port /dev/ttyUSB0: [Errno 2] could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+2026-10-09 14:18:29 [ERROR] AsyncRS232Client.py:53 - Failed to open port /dev/ttyUSB0: [Errno 2] could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+2026-10-09 14:18:29 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyUSB0 is not connected.
+2026-10-09 14:18:29 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyUSB0 is not connected.
+2026-10-09 14:18:29 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyUSB0 is not connected.
+2026-10-09 14:18:29 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyUSB0 is not connected.
+2026-10-09 14:18:29 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyUSB0 is not connected.
+2026-10-09 14:18:29 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyUSB0 is not connected.
+2026-10-09 14:18:29 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyUSB0 is not connected.
+2026-10-09 14:18:30 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyUSB0 is not connected.
+2026-10-09 14:19:31 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:19:31 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:20:03 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:20:03 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:21:01 [ERROR] AsyncRS232Client.py:53 - Failed to open port /dev/ttyAMC0: [Errno 2] could not open port /dev/ttyAMC0: [Errno 2] No such file or directory: '/dev/ttyAMC0'
+2026-10-09 14:21:01 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyAMC0 is not connected.
+2026-10-09 14:21:01 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyAMC0 is not connected.
+2026-10-09 14:21:01 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyAMC0 is not connected.
+2026-10-09 14:21:01 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyAMC0 is not connected.
+2026-10-09 14:21:01 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyAMC0 is not connected.
+2026-10-09 14:21:01 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyAMC0 is not connected.
+2026-10-09 14:21:01 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyAMC0 is not connected.
+2026-10-09 14:21:02 [ERROR] AsyncRS232Client.py:53 - Port /dev/ttyAMC0 is not connected.
+2026-10-09 14:21:28 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:21:28 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:22:07 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:22:07 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:25:02 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:40:37 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:40:37 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:40:37 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: '*IDN?\r\n'
+2026-10-09 14:40:39 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 2.0s.
+2026-10-09 14:40:39 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FMOD 1\r\n'
+2026-10-09 14:40:39 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FREQ 500.0\r\n'
+2026-10-09 14:40:39 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SLVL 1\r\n'
+2026-10-09 14:40:39 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'AGAN\r\n'
+2026-10-09 14:40:39 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'APHS\r\n'
+2026-10-09 14:40:39 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OFLT 1\r\n'
+2026-10-09 14:40:40 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 1,2,3,4\r\n'
+2026-10-09 14:40:42 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 2.0s.
+2026-10-09 14:41:14 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:41:14 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:41:14 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: '*IDN?\r\n'
+2026-10-09 14:41:19 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:41:19 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FMOD 1\r\n'
+2026-10-09 14:41:19 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FREQ 500.0\r\n'
+2026-10-09 14:41:19 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SLVL 1\r\n'
+2026-10-09 14:41:19 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'AGAN\r\n'
+2026-10-09 14:41:19 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'APHS\r\n'
+2026-10-09 14:41:19 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OFLT 1\r\n'
+2026-10-09 14:41:20 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 1,2,3,4\r\n'
+2026-10-09 14:41:25 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:43:18 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:43:18 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:43:18 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: '*IDN?\r\n'
+2026-10-09 14:43:23 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:43:23 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FMOD 1\r\n'
+2026-10-09 14:43:23 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FREQ 500.0\r\n'
+2026-10-09 14:43:23 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SLVL 1\r\n'
+2026-10-09 14:43:23 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'AGAN\r\n'
+2026-10-09 14:43:23 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'APHS\r\n'
+2026-10-09 14:43:23 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OFLT 4\r\n'
+2026-10-09 14:43:24 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 1,2,3,4\r\n'
+2026-10-09 14:43:29 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:47:00 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:47:00 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:47:00 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: '*IDN?\r\n'
+2026-10-09 14:47:05 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:47:05 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FMOD 1\r\n'
+2026-10-09 14:47:05 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FREQ 500.0\r\n'
+2026-10-09 14:47:05 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SLVL 1\r\n'
+2026-10-09 14:47:05 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'AGAN\r\n'
+2026-10-09 14:47:05 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'APHS\r\n'
+2026-10-09 14:47:05 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OFLT 4\r\n'
+2026-10-09 14:47:06 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTP? 3\r\n'
+2026-10-09 14:47:11 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:49:43 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:49:43 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:49:43 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: '*IDN?\r\n'
+2026-10-09 14:49:48 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:49:48 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FMOD 1\r\n'
+2026-10-09 14:49:48 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FREQ 500.0\r\n'
+2026-10-09 14:49:48 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SLVL 1\r\n'
+2026-10-09 14:49:48 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'AGAN\r\n'
+2026-10-09 14:49:48 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'APHS\r\n'
+2026-10-09 14:49:48 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OFLT 4\r\n'
+2026-10-09 14:49:49 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTP? 3\r\n'
+2026-10-09 14:49:54 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:49:54 [INFO] AsyncRS232Client.py:47 - Connection on /dev/ttyUSB0 closed cleanly.
+2026-10-09 14:51:30 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:51:30 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:51:30 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: '*IDN?\r\n'
+2026-10-09 14:51:35 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:51:35 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FMOD 1\r\n'
+2026-10-09 14:51:35 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FREQ 500.0\r\n'
+2026-10-09 14:51:35 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SLVL 1\r\n'
+2026-10-09 14:51:35 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'AGAN\r\n'
+2026-10-09 14:51:35 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'APHS\r\n'
+2026-10-09 14:51:35 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OFLT 4\r\n'
+2026-10-09 14:51:36 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTP? 3\r\n'
+2026-10-09 14:51:41 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:51:41 [INFO] AsyncRS232Client.py:47 - Connection on /dev/ttyUSB0 closed cleanly.
+2026-10-09 14:53:03 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:53:03 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:53:03 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: '*IDN?\r\n'
+2026-10-09 14:53:08 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:53:08 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FMOD 1\r\n'
+2026-10-09 14:53:08 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FREQ 500.0\r\n'
+2026-10-09 14:53:08 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SLVL 1\r\n'
+2026-10-09 14:53:08 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'AGAN\r\n'
+2026-10-09 14:53:08 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'APHS\r\n'
+2026-10-09 14:53:08 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OFLT 4\r\n'
+2026-10-09 14:53:09 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 3\r\n'
+2026-10-09 14:53:14 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 14:53:14 [INFO] AsyncRS232Client.py:47 - Connection on /dev/ttyUSB0 closed cleanly.
+2026-10-09 14:58:30 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:58:30 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:58:30 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: '*IDN?\r\n'
+2026-10-09 14:58:31 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 1.0s.
+2026-10-09 14:58:31 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FMOD 1\r\n'
+2026-10-09 14:58:31 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FREQ 500.0\r\n'
+2026-10-09 14:58:31 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SLVL 1\r\n'
+2026-10-09 14:58:31 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'AGAN\r\n'
+2026-10-09 14:58:31 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'APHS\r\n'
+2026-10-09 14:58:31 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OFLT 4\r\n'
+2026-10-09 14:58:32 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 3\r\n'
+2026-10-09 14:58:33 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 1.0s.
+2026-10-09 14:58:33 [INFO] AsyncRS232Client.py:47 - Connection on /dev/ttyUSB0 closed cleanly.
+2026-10-09 14:58:49 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 14:58:49 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX0\r\n'
+2026-10-09 14:58:49 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: '*IDN?\r\n'
+2026-10-09 14:58:59 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 10.0s.
+2026-10-09 14:58:59 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FMOD 1\r\n'
+2026-10-09 14:58:59 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'FREQ 500.0\r\n'
+2026-10-09 14:58:59 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SLVL 1\r\n'
+2026-10-09 14:58:59 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'AGAN\r\n'
+2026-10-09 14:58:59 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'APHS\r\n'
+2026-10-09 14:58:59 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OFLT 4\r\n'
+2026-10-09 14:59:00 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 3\r\n'
+2026-10-09 14:59:10 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 10.0s.
+2026-10-09 14:59:10 [INFO] AsyncRS232Client.py:47 - Connection on /dev/ttyUSB0 closed cleanly.
+2026-10-09 15:05:23 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 15:05:23 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 1\r\n'
+2026-10-09 15:05:28 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 15:05:52 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 15:05:52 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 1\r\n'
+2026-10-09 15:05:57 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 15:06:13 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 15:06:13 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 1\r\n'
+2026-10-09 15:06:18 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 15:06:18 [INFO] AsyncRS232Client.py:47 - Connection on /dev/ttyUSB0 closed cleanly.
+2026-10-09 15:09:06 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 15:09:06 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX 0\r\n'
+2026-10-09 15:09:06 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 1\r\n'
+2026-10-09 15:09:11 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 15:09:11 [INFO] AsyncRS232Client.py:47 - Connection on /dev/ttyUSB0 closed cleanly.
+2026-10-09 15:11:04 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 15:11:04 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX 0\r'
+2026-10-09 15:11:04 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 1\r'
+2026-10-09 15:11:09 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 15:11:09 [INFO] AsyncRS232Client.py:47 - Connection on /dev/ttyUSB0 closed cleanly.
+2026-10-09 15:13:17 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 15:13:17 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX 0\r'
+2026-10-09 15:13:17 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 1\r'
+2026-10-09 15:13:17 [ERROR] AsyncRS232Client.py:53 - Read error on /dev/ttyUSB0: StreamReader.readuntil() got an unexpected keyword argument 'seperator'. Did you mean 'separator'?
+2026-10-09 15:13:17 [INFO] AsyncRS232Client.py:47 - Connection on /dev/ttyUSB0 closed cleanly.
+2026-10-09 15:13:27 [INFO] AsyncRS232Client.py:47 - Connected to /dev/ttyUSB0 at 19200 baud.
+2026-10-09 15:13:27 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'OUTX 0\r'
+2026-10-09 15:13:27 [DEBUG] AsyncRS232Client.py:44 - Sent data on /dev/ttyUSB0: 'SNAP? 1\r'
+2026-10-09 15:13:32 [WARNING] AsyncRS232Client.py:50 - Read timed out on /dev/ttyUSB0 after 5.0s.
+2026-10-09 15:13:32 [INFO] AsyncRS232Client.py:47 - Connection on /dev/ttyUSB0 closed cleanly.
