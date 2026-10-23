@@ -1,0 +1,3 @@
+.tran 1n 100n uic
+.options method=gear reltol=0.005 RSHUNT=1G TMAX=10n
+.options RSHUNT=1G GMIN=1E-12

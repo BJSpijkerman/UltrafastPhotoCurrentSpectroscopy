@@ -1,0 +1,16 @@
+\frametitle{Code Listing}
+The \texttt{listings} package is pre-configured with UU colours.
+  Specify the language and write code verbatim:
+
+  \begin{lstlisting}[language=Python]
+def fibonacci(n):
+    """Return the n-th Fibonacci number."""
+    if n <= 1:
+        return n
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b  # shift window
+    return b
+
+print(fibonacci(10))  # 55
+  \end{lstlisting}

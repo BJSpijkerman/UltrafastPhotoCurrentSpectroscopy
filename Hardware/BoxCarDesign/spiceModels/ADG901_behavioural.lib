@@ -1,0 +1,14 @@
+* NGSPICE Behavioral Model for ADG901 RF/Analog Switch
+* Pin Order: RF1 CTRL GND VDD RF2
+
+.SUBCKT ADG901 RF1 CTRL GND VDD RF2
+
+* 1. Voltage-Controlled Switch Model
+* Ron = 2 Ohms (Switch Closed)
+* Roff = 10 MegOhms (Switch Open)
+* Threshold = 1.4V (Logic HIGH/LOW boundary)
+S1 RF1 RF2 CTRL GND SW_MODEL
+
+.MODEL SW_MODEL VSWITCH (RON=2 ROFF=10Meg VT=1.4V VH=0.2V)
+
+.ENDS ADG901

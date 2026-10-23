@@ -83,9 +83,18 @@ class AsyncRS232Client:
 		try:
 			self.reader, self.writer = (
 					await serial_asyncio.open_serial_connection(
-						url=self.port, baudrate=self.baudrate, **self.extra_kwargs
+						url=self.port,
+						baudrate=self.baudrate,
+						rtscts=False,
+						dsrdtr=False,
+						xonxoff=False,
+						**self.extra_kwargs
 						)
 					)
+			if hasattr(self.writer.transport, "serial"):
+				self.writer.transport.serial.rts = True
+				self.writer.transport.serial.dtr = True
+
 			self.logger.info("Connected to %s at %d baud.", self.port, self.baudrate)
 			return True
 		except Exception as e:
@@ -100,8 +109,8 @@ class AsyncRS232Client:
 			return False
 
 		# Add end characters
-		if add_crlf and not data.endswith("\r\n"):
-			data += "\r\n"
+		if add_crlf and not data.endswith("\r"):
+			data += "\r"
 
 		# Try to write to serial
 		try:
@@ -124,6 +133,14 @@ class AsyncRS232Client:
 			# Apply asyncio.timeout to prevent hanging
 			async with asyncio.timeout(self.timeout):
 				line = await self.reader.readuntil(separator=b"\r")
+
+				try:
+					nxt = await asyncio.wait_for(self.reader.read(1), timeout=0.01)
+					if nxt != b"\n":
+						pass
+				except (TimeoutError, asyncio.TimeoutError):
+					pass
+
 				decoded = line.decode("utf-8", errors="replace").strip()
 				self.logger.debug("Recieved raw line on %s: %r", self.port, decoded)
 				return decoded
@@ -155,6 +172,12 @@ class AsyncRS232Client:
 		self._listen_task = asyncio.create_task(_loop())
 		self.logger.info("Started listening task on %s.", self.port)
 
+	async def flush_buffer(self) -> None:
+		if self.reader:
+			try:
+				await asyncio.wait_for(self.reader.read(1024), timeout=0.05)
+			except (TimeoutError, asyncio.TimeoutError):
+				pass
 
 	async def close(self):
 		# Close streams and cancel background tasks cleanly

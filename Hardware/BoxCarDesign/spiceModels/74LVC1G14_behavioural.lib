@@ -1,0 +1,17 @@
+* Physical Behavioral Model for 74LVC1G14 Inverting Schmitt Trigger
+* Pins: 1=A, 2=Y, 3=VCC, 4=GND
+
+.SUBCKT 74LVC1G14 A Y VCC GND
+
+C_IN A GND 4P
+R_IN A GND 100MEG
+
+* Inverting Schmitt Threshold (VT+ = 1.8V, VT- = 0.9V)
+E_SCHMITT INT_Y GND TABLE { V(A) - V(GND) } = (0, 3.3) (0.9, 3.3) (1.8, 0) (5, 0)
+
+* Output Damping Stage
+R_OUT INT_Y Y_NODE 25
+C_OUT Y_NODE GND 10P
+E_DRIVE Y GND VALUE = { V(Y_NODE) }
+
+.ENDS 74LVC1G14

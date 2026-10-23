@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "SN74LV4051A") (type "KiCad") (uri "/home/brm/UltrafastPhotoCurrentSpectroscopy/Hardware/partLibs/SN74LV4051A/2026-10-19_13-10-25.kicad_sym") (options "") (descr ""))
+)

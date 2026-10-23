@@ -1,0 +1,29 @@
+* Physical Behavioral Model for 74LVC1G123 (Calibrated 100 ns Gate)
+* Mapped Pins: 1=Abar, 2=B, 3=CLRbar, 5=Q, 6=Cext, 7=RCext
+
+.SUBCKT 74LVC1G123 Abar B CLRbar Q Cext RCext
+
+C_A Abar 0 4P
+C_B B 0 4P
+C_CLR CLRbar 0 4P
+
+* 1. High-Speed Edge Differentiator (Fires a 2ns spike on B rising edge ONLY)
+E_B_BUF B_BUF 0 TABLE { V(B) } = (0, 0) (1.4, 0) (1.5, 3.3) (5, 3.3)
+R_DIFF B_BUF B_EDGE 10
+C_DIFF B_EDGE 0 100P
+
+* Sharp Edge Detector (Ignores flat DC level of B once edge passes)
+E_TRIG TRIG_SPIKE 0 VALUE = { (V(B_BUF) - V(B_EDGE) > 0.8) && (V(Abar) < 1.4) && (V(CLRbar) > 1.4) ? 3.3 : 0 }
+
+* 2. Calibrated 100 ns Stretcher Network (Tau = R * C = 1k * 100pF = 100 ns)
+R_SHOT TRIG_SPIKE SHOT_NODE 1000
+C_SHOT SHOT_NODE 0 100P
+
+* 3. Output Stage: Switches LOW when SHOT_NODE decays below 1.21V (~1 Tau = 100 ns)
+E_OUT Q_INT 0 TABLE { V(SHOT_NODE) } = (0, 0) (1.20, 0) (1.22, 3.3) (5, 3.3)
+
+* Physical CMOS Output Driver (25 Ohm series resistance + Slew C)
+R_OUT Q_INT Q 25
+C_OUT Q 0 10P
+
+.ENDS 74LVC1G123

@@ -10,3 +10,16 @@ env/
 
 # Environment / Secret variables
 .env
+
+# Make & CMake build artifacts
+build/
+CMakeFiles/
+CMakeCache.txt
+CMakeLists.txt.user
+Makefule.cmake
+cmake_install.cmake
+install_maifest.txt
+compile_commands.json
+*.so
+*.a
+*.o
