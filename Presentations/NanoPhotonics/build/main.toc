@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Motivation \& Background}{2}{0}{1}
+\beamer@sectionintoc {2}{Experimental Methods}{3}{0}{2}
+\beamer@sectionintoc {3}{Simulations}{6}{0}{3}
+\beamer@sectionintoc {4}{Electrical Detection}{8}{0}{4}

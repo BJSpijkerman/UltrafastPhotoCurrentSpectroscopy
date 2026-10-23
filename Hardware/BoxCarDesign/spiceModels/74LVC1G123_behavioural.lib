@@ -1,0 +1,30 @@
+* Physical Behavioral Model for 74LVC1G123 Monostable (Calibrated 100 ns Gate)
+* Mapped Pins: 1=Abar, 2=B, 3=CLRbar, 5=Q, 6=Cext, 7=RCext
+
+.SUBCKT 74LVC1G123 Abar B CLRbar Q Cext RCext
+
+C_A Abar 0 4P
+C_B B 0 4P
+C_CLR CLRbar 0 4P
+
+* Continuous Threshold Evaluators
+E_B  B_DET  0 TABLE { V(B) }      = (0, 0) (1.3, 0) (1.5, 3.3) (5, 3.3)
+E_A  A_DET  0 TABLE { V(Abar) }   = (0, 3.3) (1.3, 3.3) (1.5, 0) (5, 0)
+E_C  C_DET  0 TABLE { V(CLRbar) } = (0, 0) (1.3, 0) (1.5, 3.3) (5, 3.3)
+
+* Logic AND Engine
+E_TRIG TRIG_INT 0 VALUE = { (V(B_DET) * V(A_DET) * V(C_DET)) / 10.89 }
+
+* Calibrated 100 ns Internal Stretcher Node:
+* R = 1k, C = 100pF -> Tau = 100 ns time constant
+R_TIMING TRIG_INT PULSE_NODE 1K
+C_TIMING PULSE_NODE 0 100P
+
+* Bounded Threshold Switch: Output stays HIGH until PULSE_NODE decays past 1.21V (approx. 1 Tau = 100 ns)
+E_OUT Q_INT 0 TABLE { V(PULSE_NODE) } = (0, 0) (1.2, 0) (1.22, 3.3) (5, 3.3)
+
+* Physical Output Driver (25 Ohm CMOS series resistance)
+R_OUT Q_INT Q 25
+C_OUT Q 0 10P
+
+.ENDS 74LVC1G123

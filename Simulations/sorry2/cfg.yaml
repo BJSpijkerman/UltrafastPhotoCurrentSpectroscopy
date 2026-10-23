@@ -1,0 +1,19 @@
+
+
+Laser_Parameters:
+  wavelenth:    800   # nm
+  tau_pulse:    350   # fs
+  laser_power:  0.1   # W
+  f_rep:        1000  # Hz
+  T_0:          2     # ps
+  w0:           5     # mm
+
+Material_Parameters:
+  m_e_coeff:      0.26    # m*/m
+  m_h_coeff:      0.38    # m*/m
+  alpha_0:        1.0e5   # 1-photon absorption
+  beta_0:         2.0e-11 # 2-photon absorption
+  gamma_e:        1.0e-43 # Electron Auger coeff
+  gamma_h:        1.0e-43 # Hole Auger coeff
+  theta_e:        1.0e10
+  theta_h:        1.0e10

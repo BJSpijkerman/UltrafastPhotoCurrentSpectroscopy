@@ -1,0 +1,300 @@
+\documentclass[aspectratio=169, 10pt]{beamer}
+
+% --- Language & Fonts ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{FiraSans}
+\usepackage{FiraMono}
+\usepackage{microtype}
+
+% --- Math & Science ---
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+% --- Muted & Natural Color Palette ---
+\definecolor{MutedCharcoal}{RGB}{44, 54, 63}   % #2C363F - Deep charcoal header
+\definecolor{MutedSage}{RGB}{91, 112, 101}     % #5B7065 - Earthy sage accent
+\definecolor{MutedClay}{RGB}{197, 123, 87}     % #C57B57 - Muted terracotta/amber
+\definecolor{MutedText}{RGB}{58, 61, 64}       % #3A3D40 - Soft off-black text
+\definecolor{PaperBg}{RGB}{247, 246, 242}      % #F7F6F2 - Warm off-white paper canvas
+\definecolor{CardBg}{RGB}{255, 255, 255}       % Clean white card background
+\definecolor{SubtleGray}{RGB}{140, 145, 150}   % Muted gray for footers
+
+% --- Beamer Core Styling ---
+\setbeamercolor{background canvas}{bg=PaperBg}
+\setbeamercolor{normal text}{fg=MutedText}
+
+% Title & Frame Headlines
+\setbeamercolor{titlelike}{fg=MutedCharcoal}
+\setbeamercolor{frametitle}{fg=MutedCharcoal, bg=PaperBg}
+\setbeamerfont{frametitle}{size=\Large, series=\bfseries}
+
+% Structure & Bullet points
+\setbeamercolor{structure}{fg=MutedSage}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{items}[circle]
+
+% --- Muted Blocks Styling ---
+\setbeamercolor{block title}{fg=white, bg=MutedCharcoal}
+\setbeamercolor{block body}{fg=MutedText, bg=CardBg}
+
+\setbeamercolor{block title example}{fg=white, bg=MutedSage}
+\setbeamercolor{block body example}{fg=MutedText, bg=CardBg}
+
+\setbeamercolor{block title alert}{fg=white, bg=MutedClay}
+\setbeamercolor{block body alert}{fg=MutedText, bg=CardBg}
+
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+% --- Subtle Footer ---
+\setbeamertemplate{headline}{}
+
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.5ex,dp=1.125ex,left]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\hspace*{2ex}\textcolor{SubtleGray}{\insertshortauthor}
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.5ex,dp=1.125ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\textcolor{SubtleGray}{\insertshorttitle}
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.5ex,dp=1.125ex,right]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\textcolor{SubtleGray}{\insertframenumber{} / \inserttotalframenumber}\hspace*{2ex} 
+    \end{beamercolorbox}%
+  }%
+  \vskip1ex
+}
+
+% --- Presentation Metadata ---
+\title[Hot carrier-dynamics]{Hot carrier-dynamics}
+\subtitle{Hot carrier-dynamics in Silicon single crystals}
+\author[B.J. Spijkeran]{B.J. Spijkerman\inst{1}}
+\institute[Utrecht University]{
+  \inst{1}Nano Photonics, Debye Institure for Nano Material Sciences
+}
+\date{\today}
+
+% --- Document Start ---
+\begin{document}
+
+% 1. Title Slide
+{
+\setbeamertemplate{footline}{}
+\begin{frame}
+  \titlepage
+\end{frame}
+}
+
+% --- Section 1 ---
+\section{Motivation \& Background}
+
+\begin{frame}{Motivation \& Background}
+  \begin{minipage}{0.48\textwidth}
+    \begin{itemize}
+      \item \textbf{Shockley-Quaser:} Thermodynamical limiting efficiency for solar panels.
+      \item \textbf{Hot carrier-dynamics:} Very little known about hot state conductivity.
+      \item \textbf{Photocurrent spectroscopy:} Measuring carrier-dynamics with pico-second resolution.
+    \end{itemize}
+  \end{minipage}\hfill
+  \begin{minipage}{0.48\textwidth}
+    \begin{figure}[!h]
+      \centering
+%      \includegraphics[width=\textwidth]{}
+      \caption{}
+    \end{figure}
+  \end{minipage}
+\end{frame}
+
+% --- Section 2 ---
+\section{Experimental Methods}
+
+\begin{frame}{Photo- current/ conductivity Spectroscopy}
+  \begin{minipage}{0.48\textwidth}
+    \begin{itemize}
+      \item Optical pump electrical probe
+      \item Electrical detection
+      \item Advantages over TA methods
+    \end{itemize}
+  \end{minipage}\hfill
+  \begin{minipage}{0.48\textwidth}
+    \begin{figure}[!h]
+      \centering
+  %    \includegraphics[width=\textwidth]{}
+      \caption{}
+    \end{figure}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}{Experimental Methods}
+  \begin{block}{Conductivity changes}
+    The material responds to illumination by changing its conductivity:
+    \begin{equation}
+      \Delta\sigma=\Delta\mu\Delta N
+    \end{equation}
+  \end{block}
+
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{exampleblock}{Key Properties}
+        \begin{itemize}
+          \item $\Delta\sigma=\Delta\sigma_1+\Delta\sigma_2+C(\tau)$
+          \item $\mu$ is related to carrier-dynamics.
+          \item $N$ is related to carrier-population.
+        \end{itemize}
+      \end{exampleblock}
+    \end{column}
+
+    \begin{column}{0.48\textwidth}
+      \begin{alertblock}{Important Consideration}
+        The different states have their own carrier mobility $\mu_i$.
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Experimental Setup}
+  \begin{figure}[!h]
+    \centering
+%    \includegraphics[width=\textwidth]{}
+    \caption{}
+  \end{figure}
+\end{frame}
+
+% --- Section 3 ---
+\section{Simulations}
+
+\begin{frame}{Carrier Two-Temperature Model}
+   \begin{block}{Governing Equations}
+    Carrier density model
+    \begin{equation}
+      \Delta\sigma=\Delta\mu\Delta N
+    \end{equation}
+    Carrier temperature model
+    \begin{equation}
+       \Delta\sigma=\Delta\mu\Delta N
+     \end{equation}
+    Lattice temperature model
+    \begin{equation}
+      \Delta\sigma=\Delta\mu\Delta N
+    \end{equation}
+    Drude conductivity
+    \begin{equation}
+      \sigma=\frac{\sigma_0}{\nu\left(T_{\text{l}}\right)}
+    \end{equation}
+  \end{block}
+ 
+\end{frame}
+
+\begin{frame}{Carrier Two-Temperature Model}
+  \begin{figure}[!h]
+    \centering
+%    \includegraphics[width=\textwidth]{}
+    \caption{}
+  \end{figure}
+\end{frame}
+
+
+\section{Electrical Detection}
+
+\begin{frame}{Electrical Detection}
+
+  \begin{block}{The issue with electrical detection}
+    \begin{figure}[!h]
+      \centering
+%      \includegraphics[width=\textwidth]{}
+      \caption{}
+    \end{figure}
+  \end{block}
+
+  \begin{block}{The solution}
+    \begin{figure}[!h]
+      \centering
+%      \includegraphics[width=\textwidth]{}
+      \caption{}
+    \end{figure}
+  \end{block}
+
+\end{frame}
+
+\begin{frame}{Electrical Detection}
+  \begin{block}{Box car}
+    \begin{equation}
+      A[k]=\frac{1}{N}\sum_{i=0}^{N-1}\left(Signal\left[i\right]-Background\left[i\right]\right).
+    \end{equation}
+  \end{block}
+  BOX CAR AVERAGER
+\end{frame}
+
+\begin{frame}{Electrical Detection}
+  Box car arm
+  \begin{figure}[!h]
+    \centering
+%    \includegraphics[width=\textwidth]{}
+    \caption{}
+  \end{figure}
+
+\centering
+  \small
+  \begin{tabular}{l S[table-format=2.2] S[table-format=1.3] S[table-format=3.1]}
+    \toprule
+    \textbf{Component} & {\textbf{Bandwidth [GHz]}} & {\textbf{Noise [$V_{rms}/\sqrt{Hz}$]}} \\
+    \midrule
+    Pre-amp              & {$8$}                    & 0.342          \\
+    Gated integrator     & 86.15                    & 0.281          \\
+    ADC                  & 88.38                    & 0.234          \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+\begin{frame}{Electrical Detection}
+  Box car trigger
+  \begin{figure}[!h]
+    \centering
+%    \includegraphics[width=\textwidth]{}
+    \caption{}
+  \end{figure}
+
+\centering
+  \small
+  \begin{tabular}{l S[table-format=2.2] S[table-format=1.3] S[table-format=3.1]}
+    \toprule
+    \textbf{Trigger stage} & {\textbf{Imparted delay}} & {\textbf{Phase jitter [ppm/Hz]}} \\
+    \midrule
+    Rough delay             & {$1\,\unit{\milli\second}$}                 & 0.342          \\
+    Fine delay              & {$100\,\unit{\nano\second}$}                & 0.281          \\
+    Trigger generation      & {$500\,\unit{\pico\second}$}                & 0.234          \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+\begin{frame}{Electrical Detection}
+
+  \begin{block}{SNR formula}
+    The formula for signal-to-noise ratio assuming $abc$
+    \begin{equation}
+      SNR = some formula
+    \end{equation}
+  \end{block}
+  
+  \begin{figure}[!h]
+    \centering
+%    \includegraphics[width=\textwidth]{}
+    \caption{}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}{Different Photo- current/ conductivity Techniques}
+  \begin{itemize}
+    \item Correlation spectroscopy
+    \item Vibrationally constrolled spectroscopy
+    \item Near field
+    \item ...?
+  \end{itemize}
+\end{frame}
+
+\end{document}

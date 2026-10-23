@@ -1,0 +1,23 @@
+* NGSPICE Behavioral Model for ADA4522-1 (Zero-Drift Op-Amp)
+* Pin Order: IN+ IN- V+ V- OUT
+
+.SUBCKT ADA4522_BEHAVIORAL INP INN VCC VEE OUT
+
+* 1. High Input Impedance
+RIN INP INN 10Gig
+
+* 2. High Open-Loop Gain (130dB) with 2.7MHz Gain Bandwidth Product (GBW)
+* Dominant pole at ~1Hz
+E1 INT 0 VALUE = { (V(INP) - V(INN)) * 3.16Meg }
+R1 INT MID 1k
+C1 MID 0 159n
+
+* 3. Voltage Follower / Output Driver with Rail-to-Rail Output Limiting
+E_OUT OUT_RAW 0 MID 0 1.0
+E_HI HI_LIMIT 0 VALUE = { V(VCC) - 0.05V }
+E_LO LO_LIMIT 0 VALUE = { V(VEE) + 0.05V }
+
+* Output bounded within supply rails
+E_FINAL OUT 0 VALUE = { MIN( MAX( V(OUT_RAW), V(LO_LIMIT) ), V(HI_LIMIT) ) }
+
+.ENDS ADA4522_BEHAVIORAL
