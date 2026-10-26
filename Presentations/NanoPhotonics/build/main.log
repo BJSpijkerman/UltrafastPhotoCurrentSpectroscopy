@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026/Arch Linux) (preloaded format=xelatex 2026.10.26)  26 OCT 2026 17:53
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026/Arch Linux) (preloaded format=xelatex 2026.10.26)  26 OCT 2026 22:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1794,30 +1794,30 @@ File: pgflibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@lib@circ@count=\count413
 \tikzcircuitssizeunit=\dimen368
 ) (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflibraryshapes.gates.ee.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflibraryshapes.gates.ee.IEC.code.tex))
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 119.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 143.
  (build/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1853,57 +1853,57 @@ LaTeX Font Info:    ... okay on input line 119.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 119.
+Package hyperref Info: Link coloring OFF on input line 143.
 (build/main.out) (build/main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 119.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 143.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 119.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 143.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/FiraSans(0)/m/n on input line 119.
+(Font)                  OT1/cmss/m/n --> OT1/FiraSans(0)/m/n on input line 143.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/FiraSans(0)/b/n on input line 119.
+(Font)                  OT1/cmss/b/n --> OT1/FiraSans(0)/b/n on input line 143.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/FiraSans(0)/m/n --> TU/lmr/m/n on input line 119.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 119.
+(Font)                  OT1/FiraSans(0)/m/n --> TU/lmr/m/n on input line 143.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/FiraSans(0)/b/n on input line 119.
+(Font)                  OT1/lmr/bx/n --> TU/FiraSans(0)/b/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/FiraSans(0)/b/n on input line 119.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 119.
+(Font)                  OT1/lmr/bx/n --> TU/FiraSans(0)/b/n on input line 143.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/FiraSans(0)/m/n on input line 119.
+(Font)                  OT1/lmss/m/n --> TU/FiraSans(0)/m/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/FiraSans(0)/m/n on input line 119.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 119.
+(Font)                  OT1/lmss/bx/n --> TU/FiraSans(0)/m/n on input line 143.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/FiraSans(0)/m/it on input line 119.
+(Font)                  OT1/lmr/m/it --> TU/FiraSans(0)/m/it on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> TU/FiraSans(0)/m/it on input line 119.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 119.
+(Font)                  OT1/lmr/bx/it --> TU/FiraSans(0)/m/it on input line 143.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/FiraMono(0)/m/n on input line 119.
+(Font)                  OT1/lmtt/m/n --> TU/FiraMono(0)/m/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/FiraMono(0)/m/n on input line 119.
+(Font)                  OT1/lmtt/m/n --> TU/FiraMono(0)/m/n on input line 143.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/FiraSans(0)/m/n --> TU/FiraSans(0)/b/n on input line 119.
+(Font)                  TU/FiraSans(0)/m/n --> TU/FiraSans(0)/b/n on input line 143.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/FiraSans(0)/m/it --> TU/FiraSans(0)/b/it on input line 119.
+(Font)                  TU/FiraSans(0)/m/it --> TU/FiraSans(0)/b/it on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/FiraSans(0)/b/n --> TU/lmr/b/n on input line 119.
+(Font)                  OT1/FiraSans(0)/b/n --> TU/lmr/b/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/FiraSans(0)/b/n --> TU/FiraSans(0)/b/n on input line 119.
+(Font)                  TU/FiraSans(0)/b/n --> TU/FiraSans(0)/b/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/FiraSans(0)/m/n --> TU/FiraSans(0)/b/n on input line 119.
+(Font)                  TU/FiraSans(0)/m/n --> TU/FiraSans(0)/b/n on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/FiraSans(0)/m/it --> TU/FiraSans(0)/b/it on input line 119.
+(Font)                  TU/FiraSans(0)/m/it --> TU/FiraSans(0)/b/it on input line 143.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/FiraMono(0)/m/n --> TU/FiraMono(0)/b/n on input line 119.
+(Font)                  TU/FiraMono(0)/m/n --> TU/FiraMono(0)/b/n on input line 143.
  (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1917,13 +1917,13 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/share/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \microtypecontext on input line 119.
-Package microtype Info: Applying patch `item' on input line 119.
-Package microtype Info: Applying patch `toc' on input line 119.
-Package microtype Info: Applying patch `eqnum' on input line 119.
-Package microtype Info: Applying patch `footnote' on input line 119.
-Package microtype Info: Applying patch `verbatim' on input line 119.
-LaTeX Info: Redefining \microtypesetup on input line 119.
+LaTeX Info: Redefining \microtypecontext on input line 143.
+Package microtype Info: Applying patch `item' on input line 143.
+Package microtype Info: Applying patch `toc' on input line 143.
+Package microtype Info: Applying patch `eqnum' on input line 143.
+Package microtype Info: Applying patch `footnote' on input line 143.
+Package microtype Info: Applying patch `verbatim' on input line 143.
+LaTeX Info: Redefining \microtypesetup on input line 143.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1948,21 +1948,21 @@ Package siunitx Warning: Detected the "physics" package:
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 119.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 143.
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 (build/main.nav)
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 119.
+(Font)              scaled to size 5.0pt on input line 143.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 126.
-LaTeX Font Info:    Trying to load font information for OT1+FiraSans(0) on input line 126.
-LaTeX Font Info:    No file OT1FiraSans(0).fd. on input line 126.
+(Font)              scaled to size 14.4pt on input line 150.
+LaTeX Font Info:    Trying to load font information for OT1+FiraSans(0) on input line 150.
+LaTeX Font Info:    No file OT1FiraSans(0).fd. on input line 150.
 
 
 LaTeX Font Warning: Font shape `OT1/FiraSans(0)/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 126.
+(Font)              using `OT1/cmr/m/n' instead on input line 150.
 
 (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
@@ -1971,84 +1971,138 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `FiraSans' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 126.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 150.
  (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 126.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 150.
  (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 126.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 150.
  (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 126.
+(Font)              <10> on input line 150.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 126.
+(Font)              <7> on input line 150.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 126.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 126.
+(Font)              <5> on input line 150.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 150.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 126.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 150.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 126.
+(Font)              scaled to size 7.0pt on input line 150.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 126.
+(Font)              scaled to size 10.0pt on input line 150.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 7.0pt on input line 126.
+(Font)              scaled to size 7.0pt on input line 150.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 5.0pt on input line 126.
+(Font)              scaled to size 5.0pt on input line 150.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 4.0pt on input line 126.
+(Font)              scaled to size 4.0pt on input line 150.
  [1
 
 ]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 147.
+(Font)              scaled to size 10.0pt on input line 171.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 147.
+(Font)              scaled to size 9.0pt on input line 171.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 147.
+(Font)              scaled to size 14.4pt on input line 171.
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
  [2
 
 ]
 File: img/firstPCS.png Graphic file (type bmp)
 <img/firstPCS.png>
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
  [3
 
 ]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 199.
+(Font)              scaled to size 12.0pt on input line 223.
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
  [4
 
-] (./tikz/opticalSetup.tex) [5
+] (./tikz/opticalSetup.tex)
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
 
-] [6
+Overfull \vbox (11.242pt too high) detected at line 229
+ []
 
-] [7
+[5
 
-] [8
+]
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
+ [6
 
-] [9
+]
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
+ [7
 
-] [10
+] (./tikz/augerRecomb.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 12.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 12.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 12.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 9.0pt on input line 12.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 6.0pt on input line 12.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 5.0pt on input line 33.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 9.0pt on input line 44.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 67.
+) (./tikz/impactIoniz.tex) (./tikz/oneTwoPhotonAbs.tex)
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
+ [8
 
-] [11
+]
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
+ [9
 
-] [12
+]
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
+ [10
 
-] [13
+]
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
+ [11
+
+]
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
+ [12
+
+]
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
+ [13
 
 ] (./tikz/electricalDetectionIssue.tex (/usr/share/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 File: mt-LatinModernRoman.cfg 2026/02/26 v1.2 microtype config. file: Latin Modern Roman (RS)
@@ -2057,62 +2111,73 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 31.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 31.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
 (Font)              scaled to size 8.0pt on input line 31.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 6.0pt on input line 31.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 76.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 76.
-) [14
+)
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
 
-] (./tikz/boxCarTrig.tex) [15
+Overfull \vbox (0.14693pt too high) detected at line 356
+ []
+
+[14
+
+] (./tikz/boxCarTrig.tex)
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
+
+Overfull \vbox (9.35994pt too high) detected at line 367
+ []
+
+[15
 
 ] (./tikz/boxCarArm.tex)
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 342.
-
-Overfull \hbox (0.495pt too wide) detected at line 342
+Overfull \hbox (0.495pt too wide) detected at line 384
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 342
+Overfull \hbox (0.495pt too wide) detected at line 384
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 342
+Overfull \hbox (0.495pt too wide) detected at line 384
 $[]$
  []
 
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
 [16
 
 ] (./tikz/boxCarTrigArm.tex)
-Overfull \hbox (0.495pt too wide) detected at line 359
+Overfull \hbox (0.495pt too wide) detected at line 401
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 359
+Overfull \hbox (0.495pt too wide) detected at line 401
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 359
+Overfull \hbox (0.495pt too wide) detected at line 401
 $[]$
  []
 
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
 [17
 
-] [18
+]
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
+ [18
 
-] [19
+]
+File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
+<img/UU_logo_2021_EN_BLACK.png>
+ [19
 
 ]
 \tf@nav=\write6
@@ -2137,12 +2202,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BE87D27C730BC9DB237A5A274247B9C2;635.
  ) 
 Here is how much of TeX's memory you used:
- 48012 strings out of 470191
- 1198221 string characters out of 5479696
- 1764075 words of memory out of 5000000
- 75691 multiletter control sequences out of 15000+600000
- 639021 words of font info for 147 fonts, out of 8000000 for 9000
+ 48264 strings out of 470191
+ 1203753 string characters out of 5479696
+ 1781334 words of memory out of 5000000
+ 75931 multiletter control sequences out of 15000+600000
+ 639037 words of font info for 149 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,15n,123p,1001b,2301s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.xdv (19 pages, 200412 bytes).
+Output written on build/main.xdv (19 pages, 258732 bytes).

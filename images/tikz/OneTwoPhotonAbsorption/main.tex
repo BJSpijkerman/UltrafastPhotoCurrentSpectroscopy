@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, decorations.pathmorphing, calc}
+
+\definecolor{groundstate}{RGB}{44, 123, 182}
+\definecolor{excitedstate}{RGB}{215, 48, 39}
+\definecolor{photonred}{RGB}{230, 57, 70}
+\definecolor{photonblue}{RGB}{29, 53, 87}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.1, >=Stealth]
+
+    % ==========================================
+    % 1. ONE-PHOTON ABSORPTION (Left Side)
+    % ==========================================
+    \node[font=\Large\bfseries\sffamily] at (2, 5.2) {One-Photon Absorption};
+    \node[font=\large\sffamily, color=gray!80!black] at (2, 4.7) {(OPA)};
+
+    % Energy Levels (OPA)
+    \draw[ultra thick, groundstate] (0, 0) -- (4, 0) node[right, font=\bfseries] {$S_0$};
+    \draw[ultra thick, excitedstate] (0, 3.8) -- (4, 3.8) node[right, font=\bfseries] {$S_1$};
+
+    % Incoming High-Energy Photon (Blue/UV, Short Wavelength)
+    \draw[->, ultra thick, photonblue, decorate, decoration={snake, amplitude=2.5pt, segment length=7pt}] 
+        (-0.5, 1.9) -- (1.8, 1.9);
+    \node[above, font=\small\bfseries, color=photonblue] at (0.6, 2.0) {$h\nu_1 = E_g$};
+
+    % Vertical Transition Arrow
+    \draw[->, line width=2pt, photonblue] (2, 0.15) -- (2, 3.65);
+
+    % Electron at Ground State (Before) & Excited State (After)
+    \draw[fill=groundstate, draw=black, thick] (2, 0) circle (0.12);
+    \draw[fill=excitedstate, draw=black, thick] (2, 3.8) circle (0.12);
+
+
+    % ==========================================
+    % SEPARATOR LINE
+    % ==========================================
+    \draw[dashed, gray!50, thick] (5, -0.5) -- (5, 5.2);
+
+
+    % ==========================================
+    % 2. TWO-PHOTON ABSORPTION (Right Side)
+    % ==========================================
+    \node[font=\Large\bfseries\sffamily] at (8.5, 5.2) {Two-Photon Absorption};
+    \node[font=\large\sffamily, color=gray!80!black] at (8.5, 4.7) {(TPA)};
+
+    % Energy Levels (TPA)
+    \draw[ultra thick, groundstate] (6.5, 0) -- (10.5, 0) node[right, font=\bfseries] {$S_0$};
+    % Virtual State (Dashed Line)
+    \draw[thick, dashed, gray!80!black] (6.5, 1.9) -- (10.5, 1.9) node[right, font=\small\itshape] {Virtual State};
+    \draw[ultra thick, excitedstate] (6.5, 3.8) -- (10.5, 3.8) node[right, font=\bfseries] {$S_1$};
+
+    % First Incoming Photon (Red/IR, Longer Wavelength)
+    \draw[->, ultra thick, photonred, decorate, decoration={snake, amplitude=2.5pt, segment length=11pt}] 
+        (6.0, 0.95) -- (8.3, 0.95);
+    \node[above, font=\small\bfseries, color=photonred] at (7.0, 1.0) {$h\nu_2 = \frac{E_g}{2}$};
+
+    % Second Incoming Photon (Red/IR)
+    \draw[->, ultra thick, photonred, decorate, decoration={snake, amplitude=2.5pt, segment length=11pt}] 
+        (6.0, 2.85) -- (8.3, 2.85);
+    \node[above, font=\small\bfseries, color=photonred] at (7.0, 2.9) {$h\nu_2 = \frac{E_g}{2}$};
+
+    % Vertical Transition Arrows (Two-step excitation)
+    \draw[->, line width=1.5pt, photonred] (8.5, 0.15) -- (8.5, 1.8);
+    \draw[->, line width=1.5pt, photonred] (8.5, 2.0) -- (8.5, 3.65);
+
+    % Electron Positions (Ground, Virtual, Excited)
+    \draw[fill=groundstate, draw=black, thick] (8.5, 0) circle (0.12);
+    \draw[fill=gray!40, draw=gray!80!black, thick, dashed] (8.5, 1.9) circle (0.11);
+    \draw[fill=excitedstate, draw=black, thick] (8.5, 3.8) circle (0.12);
+
+    % Energy Gap Annotation (Right Edge)
+    \draw[<->, thick, gray] (10.9, 0.1) -- (10.9, 3.7) node[midway, fill=white, inner sep=2pt, font=\small] {$E_g$};
+
+\end{tikzpicture}
+
+\end{document}

@@ -23,3 +23,14 @@ ax2.legend()
 
 plt.tight_layout()
 plt.show()
+
+DICT = {
+        "time_ps": df["time_ps"],
+        "n_e": df["n_e_cm3"] / 1e21,
+        "T_e": df["T_e_K"],
+        "T_h": df["T_h_K"],
+        "T_l": df["T_l_K"]
+}
+
+df = pd.DataFrame(DICT)
+df.to_csv("data.csv")

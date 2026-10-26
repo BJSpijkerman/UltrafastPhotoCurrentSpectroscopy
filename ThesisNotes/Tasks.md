@@ -28,15 +28,13 @@
 | Completion              | Task                            | Description                                                                                                                                                                                                                                                         |
 | ----------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <input type="checkbox"> | Optical setup                   | The optical setup should be explained and documented.                                                                                                                                                                                                               |
-| <input type="checkbox"> | Electrical detection scheme     | The electrical detection scheme and its development should be described.                                                                                                                                                                                            |
 | <input type="checkbox"> | Hot carrier physics             | I want to make some notes about hot carrier physics and its theoretical/ phenomenological descriptions.                                                                                                                                                             |
 | <input type="checkbox"> | Prepare for pitch<br>03-11-2026 | I should start outlining a pitch between $5-10$ minutes for the Nanophotonics seminar on ... Think about a structure where I start with what are is the goal, what have we done, where are we now and what can we do when the machine is complete/ future upgrades. |
 | <input type="checkbox"> | Papers summaries                | I should also add more paper summaries for Gold and Silicon to link to in the simulation notes                                                                                                                                                                      |
 | <input type="checkbox"> | Ionnis's excersice              | Transfer Ioannis's excersice on transmission/ reflection on the sample and substrate.                                                                                                                                                                               |
 # Electrical detection
 
-| Completion              | Task                        | Description                                                            |
-| ----------------------- | --------------------------- | ---------------------------------------------------------------------- |
-| <input type="checkbox"> | Design electrical schematic | The electrical schematic of the box car averager needs to be designed. |
-| <input type="checkbox"> | Design PCB                  | The PCB of the box car averager needs to be designed.                  |
-| <input type="checkbox"> | Select components           | The components of the box car averager need to be selected.            |
+| Completion              | Task       | Description                                           |
+| ----------------------- | ---------- | ----------------------------------------------------- |
+| <input type="checkbox"> | Design PCB | The PCB of the box car averager needs to be designed. |
+

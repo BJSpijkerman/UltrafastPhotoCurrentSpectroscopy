@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental Setup/Electrical Detection/Trigger generation.md",
+                "file": "Simulation/Carrier Three Temperature model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Trigger generation"
+              "title": "Carrier Three Temperature model"
             }
           }
         ]
@@ -187,6 +187,10 @@
   },
   "active": "fb534030ecc47e9a",
   "lastOpenFiles": [
+    "Tasks.md",
+    "Project overview.md",
+    "Daily log/26-10-2026.md",
+    "Experimental Setup/Electrical Detection/Trigger generation.md",
     "Simulation/Carrier Two temperature model.md",
     "img/impactIonization/impactIonization.png",
     "img/elecricalDetection/TriggerSignals.svg",
@@ -208,11 +212,9 @@
     "img/impactIonization",
     "img/elecricalDetection",
     "img/directCurrentMeasurement.pdf",
-    "Tasks.md",
     "Simulation/Two-Temperature and non-thermal lattice models.md",
     "Simulation/Two temperature model for gold.md",
     "Simulation/Carrier Three Temperature model.md",
-    "Project overview.md",
     "Presentations/NanoPhotonics pitch/NanoPhotonics pitch.md",
     "Physics notes/Ioannis's Exersice/Reflection and propagation through sample and substrate.md",
     "Physics notes/Ioannis's Exersice/Boundary Conditions & Fresnel laws.md",
@@ -230,7 +232,6 @@
     "Papers/Photocurrent spectroscopy papers/Ultrafast vibrational control of organohalide perovskite optoelectronic devices using vibrationally promoted electronic resonance.md",
     "Papers/Photocurrent spectroscopy papers/Ultrafast Spectroscopy with Photocurrent detection.md",
     "Papers/Photocurrent spectroscopy papers/Ultrafast Photoconductivity in 2D van der Waals Hetro structure.md",
-    "Papers/Photocurrent spectroscopy papers/The Role of Driving Energy and Delocalized States for Charge Seperation in Organic Semiconductors.md",
-    "Papers/Photocurrent spectroscopy papers/Picosecond Photoresponse in vd Waals Hetrostructures.md"
+    "Papers/Photocurrent spectroscopy papers/The Role of Driving Energy and Delocalized States for Charge Seperation in Organic Semiconductors.md"
   ]
 }
