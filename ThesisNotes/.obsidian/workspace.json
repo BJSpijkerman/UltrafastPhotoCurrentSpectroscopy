@@ -11,10 +11,14 @@
             "id": "fb534030ecc47e9a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Experimental Setup/Electrical Detection/Trigger generation.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Trigger generation"
             }
           }
         ]
@@ -183,6 +187,7 @@
   },
   "active": "fb534030ecc47e9a",
   "lastOpenFiles": [
+    "Simulation/Carrier Two temperature model.md",
     "img/impactIonization/impactIonization.png",
     "img/elecricalDetection/TriggerSignals.svg",
     "img/elecricalDetection/TriggerSignals.pdf",
@@ -199,7 +204,6 @@
     "img/augerEffect/AugerEffect.jpg",
     "img/TTM_NLM/excitationImg.pdf",
     "img/TTM_NLM/TTMschematic.png",
-    "img/TTM_NLM/TTMresult_adjusted.png",
     "img/setup.pdf",
     "img/impactIonization",
     "img/elecricalDetection",
@@ -207,7 +211,6 @@
     "Tasks.md",
     "Simulation/Two-Temperature and non-thermal lattice models.md",
     "Simulation/Two temperature model for gold.md",
-    "Simulation/Carrier Two temperature model.md",
     "Simulation/Carrier Three Temperature model.md",
     "Project overview.md",
     "Presentations/NanoPhotonics pitch/NanoPhotonics pitch.md",

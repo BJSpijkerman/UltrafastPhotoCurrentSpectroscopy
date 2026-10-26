@@ -1,0 +1,83 @@
+\begin{tikzpicture}[
+    auto,
+    node distance=1.5cm and 1.8cm,
+    >=Stealth,
+    circuit ee IEC, % Provides ground symbols
+    % Element styles
+    block/.style={draw, fill=blue!5, rectangle, minimum height=1.2cm, minimum width=1.6cm, align=center, rounded corners=2pt},
+    opamp/.style={draw, fill=white, isosceles triangle, isosceles triangle apex angle=60, minimum height=1.2cm, rotate=0},
+    switch/.style={draw, fill=orange!10, rectangle, minimum height=1.2cm, minimum width=1.4cm, align=center},
+    label/.style={font=\sffamily\small},
+    sublabel/.style={font=\sffamily\tiny\color{gray}}
+]
+
+    % 1. Signal Input
+    \node (in) {\textbf{Signal in}};
+
+    % 2. TIA Stage
+    \node (tia) [right=1cm of in, opamp] {};
+    \node[below=1cm of tia, label] {PreAmp TIA};
+    \node[sublabel, below=1.4cm of tia] {OPA855};
+
+    % TIA Feedback loop
+    \draw (tia.left corner) + (-0.3, -0.3) -- ++(-0.3, 0.7) coordinate (tia_fb_in)
+          -- ++(1.6, 0) coordinate (tia_fb_top)
+          -- (tia_fb_top |- tia.apex) -- (tia.apex);
+    \node[draw, fill=white, inner sep=2pt, font=\tiny] at ($(tia_fb_in)!0.5!(tia_fb_top)$) {$R_f \parallel C_f$};
+
+    % Connections to TIA inputs
+    \draw ($(tia.left corner) + (0,-0.3)$) -- ($(tia.left corner) + (-2, -0.3)$);
+    \draw (tia.right corner) + (0, 0.3) -- ++(-0.5, 0.3);
+    \draw (tia.right corner) + (-0.5, 0.3) -- ++(-0.5, -0.5) node[ground, rotate=-90] {};
+
+
+    % 3. AC Coupling Capacitor
+    \node (cap) [right=0.8cm of tia.apex, draw, fill=white, minimum width=0.5cm, minimum height=0.5cm] {C};
+    \node[above=0.1cm of cap, font=\tiny] {$C_c = 100\text{nF}$};
+    \draw (tia.apex) -- (cap.west);
+
+    % 4. RF Switch (Chopper/Gate)
+    \node (rfsw) [right=0.8cm of cap, switch] {RF Switch)};
+    \node[sublabel, below=-0.5cm of rfsw] {ADG901};
+    \draw (cap.east) -- (rfsw.west);
+
+    % Control Trigger Input
+    \node (ctrl) [below=0.8cm of rfsw, font=\sffamily\footnotesize] {TRIGGER};
+    \draw[->] (ctrl) -- (rfsw.south);
+
+    % 5. Integrator Stage
+    \node (integ) [right=1.2cm of rfsw, opamp] {};
+    \node[below=1cm of integ, label] {Integrator};
+    \node[sublabel, below=1.4cm of integ] {ADA4522};
+
+    % Integrator Feedback loop
+    \draw (rfsw.east) + (0, 0.4) -- ($(integ.left corner) + (0, -0.3)$);
+    \draw (integ.left corner) + (-0.3, -0.3) -- ++(-0.3, 0.7) coordinate (int_fb_in)
+          -- ++(1.6, 0) coordinate (int_fb_top)
+          -- (int_fb_top |- integ.apex) -- (integ.apex);
+    \node[draw, fill=white, inner sep=2pt, font=\tiny] at ($(int_fb_in)!0.5!(int_fb_top)$) {$R_f \parallel C_f$};
+
+   \draw (integ.right corner) + (0, 0.3) -- ++(-0.5, 0.3);
+   \draw (integ.right corner) + (-0.5, 0.3) -- ++(-0.5, -0.5) node[ground, rotate=-90] {};
+
+
+    % 6. RC Low Pass Filter
+    \node (r_lpf) [right=0.8cm of integ.apex, draw, fill=white, minimum width=0.6cm, minimum height=0.3cm] {$R$};
+    \node[above=0.05cm of r_lpf, font=\tiny] {$22\,\Omega$};
+    \node (node_lpf) [right=0.5cm of r_lpf, circle, fill, inner sep=1pt] {};
+    \node (c_lpf) [below=0.5cm of node_lpf, draw, fill=white, minimum width=0.4cm, minimum height=0.2cm] {$C$};
+    
+    \draw (integ.apex) -- (r_lpf.west);
+    \draw (r_lpf.east) -- (node_lpf);
+    \draw (node_lpf) -- (c_lpf.north);
+    \draw (c_lpf.south) -- ++(0, -0.3) node[ground, rotate=-90] {};
+
+    % 7. ADC Stage
+    \node (adc) [right=0.8cm of node_lpf, block, fill=green!5] {ADC\\(ADS8681)};
+    \draw[->] (node_lpf) -- (adc.west);
+
+    % Signal Output Arrow
+    \draw[->] (adc.east) -- ++(0.8, 0) node[right, font=\sffamily\small] {SPI Data};
+
+\end{tikzpicture}
+

@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{positioning, calc, arrows.meta, circuits.ee.IEC}
+
+\begin{document}
+
+\begin{tikzpicture}[
+    auto,
+    node distance=1.2cm and 1.4cm,
+    >=Stealth,
+    circuit ee IEC,
+    % Custom component styles
+    block/.style={draw, fill=blue!5, rectangle, minimum height=1.2cm, minimum width=1.8cm, align=center, rounded corners=2pt},
+    mono/.style={draw, fill=orange!10, rectangle, minimum height=1.4cm, minimum width=1.6cm, align=center},
+    schmitt/.style={draw, fill=green!5, rectangle, minimum height=1.0cm, minimum width=1.2cm, align=center},
+    label/.style={font=\sffamily\small},
+    sublabel/.style={font=\sffamily\tiny\color{gray}}
+]
+
+    % 1. Input Node
+    \node (in) {\textbf{LASER\_TTL\_IN}};
+
+    % 2. Rough Delay Stage (LTC6994)
+    \node (rough_delay) [right=1.0cm of in, block] {Rough Delay\\(LTC6994)};
+    \draw[->] (in) -- (rough_delay.west);
+
+    % Resistor Set for LTC6994
+    \node (r_set) [below=0.6cm of rough_delay, draw, fill=white, minimum width=0.4cm, minimum height=0.6cm] {\tiny $R_{\text{SET}}$};
+    \draw (rough_delay.south) -- (r_set.north);
+    \draw (r_set.south) -- ++(0, -0.2) node[ground, rotate=-90] {};
+
+    % Node after Rough Delay
+    \node (node_rough) [right=0.8cm of rough_delay, circle, fill, inner sep=1pt] {};
+    \draw (rough_delay.east) -- (node_rough);
+
+    % 3. First Fine Delay / Monostable (74LVC1G123 - Arm 1)
+    \node (mono1) [above right=0.8cm and 1.2cm of node_rough, mono] {Monostable 1\\(74LVC1G123)};
+    \node[sublabel, above=0.7cm of mono1] {Fine Delay Arm 1};
+
+    % Passive timing network for Mono 1 (Rext1 / Cext1)
+    \draw (mono1.north) -- ++(0, 0.4) coordinate (m1_tc);
+    \node[draw, fill=white, inner sep=2pt, font=\tiny, above=0.0cm of m1_tc] {$R_{\text{ext1}} \parallel C_{\text{ext1}}$};
+
+    % Connections to Mono 1
+    \draw[->] (node_rough) |- (mono1.west);
+    \draw[->] (mono1.east) -- ++(0.8, 0) node[right, font=\sffamily\small] {\textbf{TRIGGER\_ARM\_1}};
+
+    % 4. Low-Pass Filter Stage (R_LPF3 & C_LPF3)
+    \node (r_lpf) [below right=0.3cm and 0.6cm of node_rough, draw, fill=white, minimum width=0.6cm, minimum height=0.3cm] {$R$};
+    \node[above=0.05cm of r_lpf, font=\tiny] {$10\,\Omega$};
+    \draw (node_rough) |- (r_lpf.west);
+
+    \node (node_lpf) [right=0.4cm of r_lpf, circle, fill, inner sep=1pt] {};
+    \node (c_lpf) [below=0.5cm of node_lpf, draw, fill=white, minimum width=0.4cm, minimum height=0.2cm] {$C$};
+    \node[right=0.05cm of c_lpf, font=\tiny] {100pF};
+
+    \draw (r_lpf.east) -- (node_lpf);
+    \draw (node_lpf) -- (c_lpf.north);
+    \draw (c_lpf.south) -- ++(0, -0.3) node[ground, rotate=-90] {};
+
+    % 5. Schmitt Trigger Buffers (74LVC1G14)
+    \node (st1) [right=0.6cm of node_lpf, schmitt] {\small Schmitt 1\\\tiny(74LVC1G14)};
+    \draw[->] (node_lpf) -- (st1.west);
+
+    \node (r1) [right=0.5cm of st1, draw, fill=white, minimum width=0.5cm, minimum height=0.3cm] {\tiny $R_1$};
+    \node (st2) [right=0.5cm of r1, schmitt] {\small Schmitt 2\\\tiny(74LVC1G14)};
+
+    \draw (st1.east) -- (r1.west);
+    \draw[->] (r1.east) -- (st2.west);
+
+    % 6. Second Fine Delay / Monostable (74LVC1G123 - Arm 2)
+    \node (r2) [right=0.5cm of st2, draw, fill=white, minimum width=0.5cm, minimum height=0.3cm] {\tiny $R_2$};
+    \node (mono2) [right=0.6cm of r2, mono] {Monostable 2\\(74LVC1G123)};
+    \node[sublabel, above=0.7cm of mono2] {Fine Delay Arm 2};
+
+    % Passive timing network for Mono 2 (Rext2 / Cext2)
+    \draw (mono2.north) -- ++(0, 0.4) coordinate (m2_tc);
+    \node[draw, fill=white, inner sep=2pt, font=\tiny, above=0.0cm of m2_tc] {$R_{\text{ext2}} \parallel C_{\text{ext2}}$};
+
+    \draw (st2.east) -- (r2.west);
+    \draw[->] (r2.east) -- (mono2.west);
+
+    % Final Output
+    \draw[->] (mono2.east) -- ++(0.8, 0) node[right, font=\sffamily\small] {\textbf{TRIGGER\_ARM\_2}};
+
+\end{tikzpicture}
+
+\end{document}

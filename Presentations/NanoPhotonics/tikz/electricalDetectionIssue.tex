@@ -1,0 +1,83 @@
+\begin{tikzpicture}
+    % ==========================================
+    % TOP AXIS: Macro View (1 ms Integration Window)
+    % ==========================================
+    \begin{axis}[
+        name=macroAxis,
+        width=12cm, height=4cm,
+        xmin=-0.1, xmax=1.1,
+        ymin=-0.05, ymax=1.4,
+        axis lines=left,
+        xlabel={Time ($t$)},
+        ylabel={Amplitude},
+        xtick={0, 0.2, 1.0},
+        xticklabels={$0$, $t_{\mathrm{pulse}}$, $1\mathrm{~ms}$},
+        ytick=\empty,
+%        title=\textbf{Integration Window ($1\mathrm{~ms}$)},
+        every axis x label/.style={at={(current axis.right of origin)},anchor=north west},
+        axis line style={->, thick}
+    ]
+        % Integration Window background
+        \fill[gray!15] (axis cs:0,0) rectangle (axis cs:1,1.2);
+        \node[anchor=north] at (axis cs:0.6, 1.05) {\footnotesize Integration Window ($T_{\mathrm{int}} = 1\mathrm{~ms}$)};
+
+        % Pulse marker
+        \draw[signalred, ultra thick] (axis cs:0.2,0) -- (axis cs:0.2,0.9);
+        
+        % Zoom indicator circle
+        \draw[dashed, orange!80!black, thick] (axis cs:0.15,0) rectangle (axis cs:0.25, 1);
+            
+        \node[anchor=south, orange!80!black] at (axis cs:0.2, 1) {\tiny $10\mathrm{~ns}$ Pulse};
+    \end{axis}
+
+    % ==========================================
+    % BOTTOM AXIS: Micro View (50 ns Zoomed-In)
+    % ==========================================
+    \begin{axis}[
+        name=microAxis,
+        at={($(macroAxis.south west)+(0,-4.5cm)$)},
+        width=12cm, height=5cm,
+        xmin=-10, xmax=140,
+        ymin=-0.05, ymax=1.4,
+        axis lines=left,
+        xlabel={Time ($\mathrm{ns}$)},
+        ylabel={Amplitude},
+        xtick={0, 50},
+        xticklabels={$0\mathrm{~ns}$, $50\mathrm{~ns}$},
+        ytick={0, 1},
+        yticklabels={$0$, $A_0$},
+%        title=\textbf{Zoomed View: Gated Exponential Decay ($50\mathrm{~ns}$)},
+        axis line style={->, thick}
+    ]
+        % Filled Area under Gated Exponential Decay
+        \addplot[
+            domain=0:100,
+            samples=100,
+            fill=gateblue!20,
+            draw=none
+        ] {exp(-x/18)} \closedcycle;
+        
+        % Exponential Signal Line
+        \addplot[
+            domain=0:120,
+            samples=150,
+            signalred,
+            ultra thick
+        ] {exp(-x/18)};
+        
+        % Gate Control Signal
+        \draw[gateblue, thick, dashed] (axis cs:-10, 0) -- (axis cs:0, 0) 
+            -- (axis cs:0, 1.15) -- (axis cs:100, 1.15) -- (axis cs:100, 0) -- (axis cs:140, 0);
+
+        % Annotations
+        \node[gateblue, font=\small, anchor=south west] at (axis cs:20, 1.15) {Integration Gate ($100\mathrm{~ns}$)};
+        \node[signalred, font=\small, anchor=west] at (axis cs:18, 0.6) {$S(t) = A_0 e^{-t/\tau}$};
+        \node[font=\footnotesize, color=gateblue!80!black] at (axis cs:7, 0.15) {Integrated Area};
+    \end{axis}
+
+    % Connection Lines (Zoom effect)
+    \draw[dashed, orange!80!black, thick] (2.1, 0) -- (0.7, -1.7);
+    \draw[dashed, orange!80!black, thick] (3.1, 0) -- (7.6, -1.6);
+
+\end{tikzpicture}
+

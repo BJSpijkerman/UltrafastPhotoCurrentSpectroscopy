@@ -1,0 +1,147 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, decorations.markings, calc}
+
+% Define arrow decoration for beam paths
+\tikzset{
+  beam arrow/.style={
+    postaction={
+      decorate,
+      decoration={
+        markings,
+        mark=at position 0.55 with {\arrow[red, thick]{Stealth[length=2.5mm]}}
+      }
+    }
+  },
+  beam arrow orange/.style={
+    postaction={
+      decorate,
+      decoration={
+        markings,
+        mark=at position 0.55 with {\arrow[orange!90!black, thick]{Stealth[length=2.5mm]}}
+      }
+    }
+  }
+}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.1, >=stealth]
+
+    % ==========================================
+    % 1. LASER SOURCE
+    % ==========================================
+    % Label
+    \node[anchor=south] at (0.5, 1.2) {\large Laser 1kHz, 100fs};
+    
+    % Main Body (Dark Box)
+    \filldraw[fill=gray!85!black, draw=black, thick] (0, 0) rectangle (1.2, 1.2);
+    % Rear Cap
+    \fill[black] (-0.15, 0.15) rectangle (0, 1.05);
+    % Inner Beam Chamber (Glow effect)
+    \fill[black] (0.1, 0.25) rectangle (1.2, 0.95);
+    \fill[top color=red!90!black, bottom color=red!90!black, middle color=white] (0.1, 0.35) rectangle (1.2, 0.85);
+
+    % ==========================================
+    % 2. BEAM SPLITTER 1 (Top Left)
+    % ==========================================
+    \coordinate (BS1) at (2.5, 0.6);
+    \draw[thick, fill=blue!15!gray!20] ($(BS1)+(-0.25,-0.25)$) rectangle ($(BS1)+(0.25,0.25)$);
+    \draw[thick, gray!70!black] ($(BS1)+(-0.25,-0.25)$) -- ($(BS1)+(0.25,0.25)$);
+
+    % ==========================================
+    % 3. STATIC OPTICAL DELAY (Top Middle)
+    % ==========================================
+    \node[anchor=south] at (4.4, 1.2) {\large Static optical delay};
+    \filldraw[fill=gray!60, draw=black, thick] (3.5, 0.1) rectangle (5.6, 1.1);
+    
+    % ==========================================
+    % 4. BEAM COMBINER / SPLITTER 2 (Top Right)
+    % ==========================================
+    \coordinate (BS2) at (8.8, 0.6);
+    \draw[thick, fill=blue!15!gray!20] ($(BS2)+(-0.25,-0.25)$) rectangle ($(BS2)+(0.25,0.25)$);
+    \draw[thick, gray!70!black] ($(BS2)+(-0.25,-0.25)$) -- ($(BS2)+(0.25,0.25)$);
+
+    % ==========================================
+    % 5. SILICON TARGET (Far Right)
+    % ==========================================
+    \node[anchor=south] at (10.6, 1.4) {\large Silicon};
+    % Gradient Block
+    \fill[left color=gray!30, right color=cyan!30!gray!40, middle color=white] (10.3, -0.2) rectangle (10.9, 1.4);
+    % Glass Sheen Lines
+    \draw[white, opacity=0.8, line width=1pt] (10.4, 0.0) -- (10.8, 1.2);
+    \draw[white, opacity=0.8, line width=1.5pt] (10.5, -0.1) -- (10.85, 0.9);
+
+    % ==========================================
+    % 6. OPTICAL DELAY STAGE (Bottom Left)
+    % ==========================================
+    \node[anchor=north] at (2.9, -3.9) {\large Optical delay stage};
+    \filldraw[fill=gray!60, draw=black, thick] (2.2, -3.7) rectangle (3.6, -2.5);
+    
+    % Retroreflector Mirrors inside Stage
+    % Left mirror (45 deg)
+    \coordinate (M_stage1) at (2.5, -3.15);
+    \draw[ultra thick] ($(M_stage1)+(0.25,-0.25)$) -- ($(M_stage1)+(-0.25,0.25)$);
+    \fill[black] ($(M_stage1)+(0.25,-0.25)$) -- ($(M_stage1)+(-0.25,0.25)$) -- ($(M_stage1)+(-0.3,0.2)$) -- ($(M_stage1)+(0.2,-0.3)$) -- cycle;
+    
+    % Right mirror (-45 deg)
+    \coordinate (M_stage2) at (3.3, -3.15);
+    \draw[ultra thick] ($(M_stage2)+(-0.25,-0.25)$) -- ($(M_stage2)+(0.25,0.25)$);
+    \fill[black] ($(M_stage2)+(-0.25,-0.25)$) -- ($(M_stage2)+(0.25,0.25)$) -- ($(M_stage2)+(0.3,0.2)$) -- ($(M_stage2)+(-0.2,-0.3)$) -- cycle;
+
+    % Delay Stage Double Arrow
+    \draw[<->, thick] (2.9, -2.1) -- (2.9, -3.0);
+
+% --- THE CHOPPER IN THE UPPER ARM ---
+    % Placed midway between the Beam Splitter and the Upper Mirror
+    \coordinate (chopper) at (6.8, 0.6);
+    % Draw chopper wheel background & slots
+    \draw[fill=orange!30, thick] (chopper) circle (0.3);
+    \fill[white] (chopper) ++(0,0) -- ++(30:0.3) arc (30:75:0.3) -- cycle;
+    \fill[white] (chopper) ++(0,0) -- ++(120:0.3) arc (120:165:0.3) -- cycle;
+    \fill[white] (chopper) ++(0,0) -- ++(210:0.3) arc (210:255:0.3) -- cycle;
+    \fill[white] (chopper) ++(0,0) -- ++(300:0.3) arc (300:345:0.3) -- cycle;
+    \fill[black] (chopper) circle (0.08); % Center hub
+    
+    % Optional rotation indicator arrow
+    \draw[->, thick, gray] (chopper) ++(45:0.45) arc (45:135:0.45);
+    \node[anchor=south] at (6.9, -0.5) {\large Chopper 500Hz};
+
+
+    % ==========================================
+    % 7. ROUTING MIRRORS
+    % ==========================================
+    % Lower Middle Mirror (45 deg)
+    \coordinate (M1) at (3.3, -1.5);
+    \draw[ultra thick] ($(M1)+(-0.22,-0.22)$) -- ($(M1)+(0.22,0.22)$);
+    \fill[black] ($(M1)+(-0.22,-0.22)$) -- ($(M1)+(0.22,0.22)$) -- ($(M1)+(0.17,0.27)$) -- ($(M1)+(-0.27,-0.17)$) -- cycle;
+
+    % Lower Right Mirror (-45 deg)
+    \coordinate (M2) at (8.8, -1.5);
+    \draw[ultra thick] ($(M2)+(-0.22,-0.22)$) -- ($(M2)+(0.22,0.22)$);
+    \fill[black] ($(M2)+(-0.22,-0.22)$) -- ($(M2)+(0.22,0.22)$) -- ($(M2)+(0.27,0.17)$) -- ($(M2)+(-0.17,-0.27)$) -- cycle;
+
+    % ==========================================
+    % 8. BEAM PATHS & ARROWS
+    % ==========================================
+    % Laser output to BS1
+    \draw[red, thick, beam arrow] (1.2, 0.6) -- (BS1);
+
+    % Top Path: BS1 -> Static Delay -> BS2 -> Silicon
+    \draw[red, thick, beam arrow] (BS1) -- (4.2, 0.6);
+    \draw[red, thick] (4.2, 0.6) -- (6.6, 0.6);
+    \draw[red, thick, beam arrow] (6.6, 0.6) -- (BS2);
+    \draw[red, thick, beam arrow] ($(BS2)+(0,0.1)$) -- (10.3, 0.7);
+
+    % Bottom Path: BS1 -> Delay Stage -> M1 -> M2 -> BS2 -> Silicon
+    \draw[red, thick, beam arrow] (BS1) -- (2.5, -3.15);
+    \draw[red, thick] (2.5, -3.15) -- (3.3, -3.15);
+    \draw[red, thick, beam arrow] (3.3, -3.15) -- (M1);
+    \draw[red, thick, beam arrow] (M1) -- (M2);
+    \draw[red, thick, beam arrow] (M2) -- (BS2);
+    % Lower Beam to Silicon
+    \draw[orange!90!black, thick, beam arrow orange] ($(BS2)+(0,-0.1)$) -- (10.3, 0.5);
+
+\end{tikzpicture}
+
+\end{document}
