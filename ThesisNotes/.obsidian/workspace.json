@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Simulation/Carrier Three Temperature model.md",
+                "file": "Simulation/Carrier Two temperature model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Carrier Three Temperature model"
+              "title": "Carrier Two temperature model"
             }
           }
         ]
@@ -187,11 +187,17 @@
   },
   "active": "fb534030ecc47e9a",
   "lastOpenFiles": [
-    "Tasks.md",
-    "Project overview.md",
-    "Daily log/26-10-2026.md",
-    "Experimental Setup/Electrical Detection/Trigger generation.md",
+    "Simulation/Two temperature model for gold.md",
     "Simulation/Carrier Two temperature model.md",
+    "Simulation/Two-Temperature and non-thermal lattice models.md",
+    "Simulation/Carrier Three Temperature model.md",
+    "Experimental Setup/Time resolution and hot carrier identification.md",
+    "Papers/Photocurrent spectroscopy papers/Generation of photovoltage in graphene on a femtosecond timescale through efficient carrier heating.md",
+    "Papers/Silicon/Ab Initio Study of Hot Carriers in the First Picosecond after Sunlight Absorption in Silicon.md",
+    "Papers/Silicon/Generation of dense electron-hole plasmas in Silicom.md",
+    "Presentations/NanoPhotonics pitch/NanoPhotonics pitch.md",
+    "Experimental Setup/Electrical Detection/Trigger generation.md",
+    "Daily log/26-10-2026.md",
     "img/impactIonization/impactIonization.png",
     "img/elecricalDetection/TriggerSignals.svg",
     "img/elecricalDetection/TriggerSignals.pdf",
@@ -212,10 +218,8 @@
     "img/impactIonization",
     "img/elecricalDetection",
     "img/directCurrentMeasurement.pdf",
-    "Simulation/Two-Temperature and non-thermal lattice models.md",
-    "Simulation/Two temperature model for gold.md",
-    "Simulation/Carrier Three Temperature model.md",
-    "Presentations/NanoPhotonics pitch/NanoPhotonics pitch.md",
+    "Tasks.md",
+    "Project overview.md",
     "Physics notes/Ioannis's Exersice/Reflection and propagation through sample and substrate.md",
     "Physics notes/Ioannis's Exersice/Boundary Conditions & Fresnel laws.md",
     "Physics notes/Impact ionization.md",
@@ -226,12 +230,8 @@
     "Papers/Two temperature model papers/Thermal and non-thermal ablation mechanisms in crystalline silicon by femtosecond laser pulses.md",
     "Papers/Two temperature model papers/Hyperbolic Two-Temperature Photo-Thermal Interaction in a Semiconductor Medium with a Cylindrical Cavity.md",
     "Papers/Two temperature model papers/Application of a two-temperature model for the investigation of the periodic structure formation on Sisurface in femtosecond laser interactions.md",
-    "Papers/Silicon/Generation of dense electron-hole plasmas in Silicom.md",
     "Papers/Photocurrent spectroscopy papers/_Overview of Summaries.md",
     "Papers/Photocurrent spectroscopy papers/_Operando Spectroscopy and Non-Equilibrium Carrier Dynamics in Low-Dimensional Optoelectronic and Photocolatic Materials.md",
-    "Papers/Photocurrent spectroscopy papers/Ultrafast vibrational control of organohalide perovskite optoelectronic devices using vibrationally promoted electronic resonance.md",
-    "Papers/Photocurrent spectroscopy papers/Ultrafast Spectroscopy with Photocurrent detection.md",
-    "Papers/Photocurrent spectroscopy papers/Ultrafast Photoconductivity in 2D van der Waals Hetro structure.md",
-    "Papers/Photocurrent spectroscopy papers/The Role of Driving Energy and Delocalized States for Charge Seperation in Organic Semiconductors.md"
+    "Papers/Photocurrent spectroscopy papers/Ultrafast vibrational control of organohalide perovskite optoelectronic devices using vibrationally promoted electronic resonance.md"
   ]
 }

@@ -100,7 +100,7 @@ StateVector system_ode(double t, const StateVector& U)
 	// Carrier generation / Recombination rates
 	double dn_dt = (alpha_0 * I) / (hbar * omega_0) +
 		(beta_0 * I * I) / (2.0 * hbar * omega_0) -
-		gamma_e * n_e * n_h -
+		gamma_e * n_e * n_e * n_h -
 		gamma_h * n_h * n_h * n_e + 
 		0.5 * (theta_e * n_e + theta_h * n_h);
 

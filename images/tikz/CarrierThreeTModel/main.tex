@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=11cm,
+    height=7.5cm,
+    xlabel={Time $\left[\text{ps}\right]$},
+    ylabel={Temperature $\left[\text{K}\right]$},
+    xmin=0, xmax=10,
+    ymin=200, ymax=2400,
+    grid=both,
+    grid style={line width=.1pt, draw=gray!20},
+    major grid style={line width=.2pt, draw=gray!50},
+    legend style={at={(0.55,0.77)}, anchor=north west, font=\small}
+]
+
+    % Electron Temperature (T_e)
+    \addplot[line width=1.2pt, red] table[x=time_ps, y=T_e, col sep=comma] {data.csv};
+    \addlegendentry{$T_e$ (Electron)}
+
+    % Hole Temperature (T_h)
+    \addplot[line width=1.2pt, orange] table[x=time_ps, y=T_h, col sep=comma] {data.csv};
+    \addlegendentry{$T_h$ (Hole)}
+
+    % Lattice Temperature (T_l)
+    \addplot[line width=1.2pt, blue] table[x=time_ps, y=T_l, col sep=comma] {data.csv};
+    \addlegendentry{$T_l$ (Lattice)}
+
+\end{axis}
+
+% Secondary Y-Axis for Carrier Density (n_e)
+\begin{axis}[
+    width=11cm,
+    height=7.5cm,
+    xmin=0, xmax=10,
+    ymin=0, ymax=0.0009,
+    axis y line*=right,
+    axis x line=none,
+    ylabel={Electron Density $\left[\cdot10^{21}\,\text{cm}^{-3}\right]$},
+    ylabel style={text=teal},
+    yticklabel style={text=teal, /pgf/number format/fixed, /pgf/number format/precision=4},
+    legend style={at={(0.55,0.60)}, anchor=north west, font=\small}
+]
+    \addplot[line width=1.2pt, teal, dashed] table[x=time_ps, y= n_e, col sep=comma] {data.csv};
+    \addlegendentry{$n_e$ (Carrier Density)}
+\end{axis}
+\end{tikzpicture}
+\caption{Carrier dynamics and temperature evolution over time.}
+\end{figure}
+
+\end{document}

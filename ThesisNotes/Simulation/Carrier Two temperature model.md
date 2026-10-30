@@ -11,6 +11,7 @@ $$
 C_{\text{c}}\frac{\partial T_{\text{c}}}{\partial t}=-K\left(T_{\text{c}}-T_{\text{l}}\right) + \left(\alpha+\beta I+\Theta n\right)I-\frac{\partial n}{\partial t}\left(E_{\text{g}}+3k_{\text{B}}T_{\text{c}}\right)-n\left(\frac{\partial E_{\text{g}}}{\partial n}\frac{\partial n}{\partial t}+\frac{\partial E_{\text{g}}}{\partial T_{\text{c}}}\frac{\partial T_{\text{c}}}{\partial t}\right),
 $$
 where $C_{\text{c}}$ is the carrier heat capacity, $K$ is the carrier lattice coupling constant, $\Theta$ is the carrier absorption rate, $E_{\text{g}}$ is the band gap, and $T_{\text{c}}$ is the carrier temperature.
+- The term:$-K\left(T_{\text{c}}-T_{\text{l}}\right)$ incorporates the energy exchange between the carrier and lattice heatbaths	
 $$
 C_{\text{l}}\frac{\partial T_{\text{l}}}{\partial t}=K\left(T_{\text{c}}-T_{\text{l}}\right),
 $$

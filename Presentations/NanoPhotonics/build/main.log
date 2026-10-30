@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026/Arch Linux) (preloaded format=xelatex 2026.10.26)  26 OCT 2026 22:11
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026/Arch Linux) (preloaded format=xelatex 2026.10.26)  27 OCT 2026 08:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2094,10 +2094,36 @@ File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
 <img/UU_logo_2021_EN_BLACK.png>
  [11
 
-]
+] (./tikz/carrierThreeTModel.tex
+PGFPlots: reading {tikz/data.csv}
+
+
+Package pgfplots Warning: Table 'tikz/data.csv' has an empty column name; replacing it by '0'' on input line 16.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {tikz/data.csv}
+
+Package pgfplots Warning: Table 'tikz/data.csv' has an empty column name; replacing it by '0'' on input line 20.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {tikz/data.csv}
+
+Package pgfplots Warning: Table 'tikz/data.csv' has an empty column name; replacing it by '0'' on input line 24.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {tikz/data.csv}
+
+Package pgfplots Warning: Table 'tikz/data.csv' has an empty column name; replacing it by '0'' on input line 42.
+
+ [warning /pgfplots/warning/empty column name]
+)
 File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
 <img/UU_logo_2021_EN_BLACK.png>
- [12
+
+Overfull \vbox (7.02315pt too high) detected at line 327
+ []
+
+[12
 
 ]
 File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
@@ -2117,7 +2143,7 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
 File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
 <img/UU_logo_2021_EN_BLACK.png>
 
-Overfull \vbox (0.14693pt too high) detected at line 356
+Overfull \vbox (0.14693pt too high) detected at line 355
  []
 
 [14
@@ -2126,23 +2152,23 @@ Overfull \vbox (0.14693pt too high) detected at line 356
 File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
 <img/UU_logo_2021_EN_BLACK.png>
 
-Overfull \vbox (9.35994pt too high) detected at line 367
+Overfull \vbox (9.35994pt too high) detected at line 366
  []
 
 [15
 
 ] (./tikz/boxCarArm.tex)
-Overfull \hbox (0.495pt too wide) detected at line 384
+Overfull \hbox (0.495pt too wide) detected at line 383
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 384
+Overfull \hbox (0.495pt too wide) detected at line 383
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 384
+Overfull \hbox (0.495pt too wide) detected at line 383
 $[]$
  []
 
@@ -2151,17 +2177,17 @@ File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
 [16
 
 ] (./tikz/boxCarTrigArm.tex)
-Overfull \hbox (0.495pt too wide) detected at line 401
+Overfull \hbox (0.495pt too wide) detected at line 400
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 401
+Overfull \hbox (0.495pt too wide) detected at line 400
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 401
+Overfull \hbox (0.495pt too wide) detected at line 400
 $[]$
  []
 
@@ -2202,12 +2228,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BE87D27C730BC9DB237A5A274247B9C2;635.
  ) 
 Here is how much of TeX's memory you used:
- 48264 strings out of 470191
- 1203753 string characters out of 5479696
- 1781334 words of memory out of 5000000
- 75931 multiletter control sequences out of 15000+600000
+ 48346 strings out of 470191
+ 1205598 string characters out of 5479696
+ 2126018 words of memory out of 5000000
+ 76007 multiletter control sequences out of 15000+600000
  639037 words of font info for 149 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 128i,15n,123p,1001b,2301s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,19n,123p,1001b,2291s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.xdv (19 pages, 258732 bytes).
+Output written on build/main.xdv (19 pages, 405228 bytes).

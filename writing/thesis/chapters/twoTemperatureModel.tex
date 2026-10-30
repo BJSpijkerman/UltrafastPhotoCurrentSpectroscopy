@@ -1,0 +1,45 @@
+The two temperature model is widely used in the fields of laser ablation ... to build rough models for material response to ultrafast laser pulses. It considers the carrier and lattice subsystems as thermal baths coupled by carrier-phonon interactions. When the temperature difference between the two hear baths is small enough the energy exchange can be approximated linearly. In this situation the total energy change of the two baths is described by,
+\begin{align}
+  \frac{\Delta E_1}{\Delta t}=&g_1\left(T_2-T_1\right),\\
+  \frac{\Delta E_2}{\Delta t}=&g_2\left(T_1-T_2\right),
+\end{align}
+where $E_i$ is the total energy of bath $i$, $g_i$ is the coupling strength of bath $i$ with the other bath and $T_i$ is the temperature of bath $i$. By then enforcing the conservation of energy i.e. $\Delta E_1=-\Delta E_2$ one finds the condition that $g_1=g_2=g$. The coupling of the baths must thus be symmetric. We can turn these equation into an equation of motion for the heat bath temperature by using the definition of the heat capacity: $C=\pdv[]{E}{T}$ and using the chain rule arriving at,
+\begin{align}
+  C_1\pdv[]{T_1}{t}=&g\left(T_2-T_1\right),\\
+  C_2\pdv[]{T_2}{t}=&g\left(T_1-T_2\right).
+\end{align}
+When we now consider absorption of light by the electronic heat bath by adding a source term $S(t)$ to the system of equations we arrive at a reasonable model for materials experiencing intra-band excitations, such as weakly excited gold or other materials with a partially filled conduction band.\\
+This model works well for materials where the carrier population remains constant, but in Silicon the Fermi level lies between the valance and conduction band. There are thus no intrinsic charge carriers present and excitation by a laser pulse leads to the formation of electron-hole pairs on either side of the bandgap. Because of this it is important to also evolve the charge carrier population. One also needs to introduce energy exchange effects caused by recombination of electron hole pairs, such as Auger recombination and impact ionization. Auger recombination is a three carrier process where and electron hole recombine and transmit the energy to another carrier and impact ionization is the opposite effect where and excited carrier loses energy to generate a new electron-hole pair, note that this source term should be normalized on the photon energy to get a dimensionless term. Then adding the source term leads to the following equation for the carrier population,
+\begin{equation}
+  \pdv[]{n}{t}=-\gamma n^3 + \eta n + \frac{S(t)}{\hbar\omega_0},
+\end{equation}
+where $\gamma$ is the rate of Auger recombination and $\eta$ is the rate of impact ionization. The source term is $S(t)$ is also added to this equation to account for the generation of carriers. To reflect this more complicated system the equations for the temperature of the heat baths also need to be changed. Where we need to add terms for the loss and gain in energy due to Auger recombination and impact ionization and decay of the carrier population. The terms we add are the following:
+\begin{itemize}
+  \item Auger recombination:
+  \item Impact ionization:
+  \item ...
+\end{itemize}
+This leads to the following equation for the carrier temperature,
+\begin{equation}
+  C_{\text{c}}\pdv[]{T_{\text{c}}}{t}=-g\left(T_{\text{c}-T_{\text{l}}}\right)+S(t)+\Theta I - \pdv[]{n}{t}\left(E_{\text{g}}+3k_{\text{b}}T_{\text{c}}\right)-n\left(\pdv[]{E_{\text{g}}}{n}\pdv[]{n}{t}+\pdv[]{E_{\text{g}}}{T_{\text{c}}}\pdv[]{T_{\text{c}}}{t}\right),
+\end{equation}
+where the subscript $\text{c}$ denotes carrier. Now we turn our attention to the source terms in the equations of the carrier population and carrier temperatures. In this source term we account for both one and two photon absorption, which gives,
+\begin{equation}
+  S(t)= \alpha I(t) + \beta T^2(t),
+\end{equation}
+where $\alpha$ is the one photon absorption rate, $beta$ is the two photon absorption rate and $I(t)$ is the intensity profile of the source, usually a Gaussian. The full system of equations is thus:
+\begin{align}
+  \pdv[]{n}{t}=&-\gamma n^3+\eta n + \frac{\alpha}{\hbar\omega_0}I(t)+\frac{\beta}{\hbar\omega_0}I^2(t),\\
+  C_{\text{c}}\pdv[]{T_{\text{c}}}{t}=&-g\left(T_{\text{c}}-T_{\text{l}}\right)+\left(\alpha+\beta I+\Theta n\right)I(t)-\pdv[]{n}{t}\left(E_{\text{g}}+3k_{\text{B}}T_{\text{c}}\right)-n\left(\pdv[]{E_{\text{g}}}{n}\pdv[]{n}{t}+\pdv[]{E_{\text{g}}}{T_{\text{c}}}\pdv[]{T_{\text{c}}}{t}\right),\\
+  C_{\text{l}}\pdv[]{T_{\text{l}}}{t}=&g\left(T_{\text{c}}-T_{\text{l}}\right).
+\end{align}
+
+{\color{red} SOmething like from literature we get functions for the prefactors....}
+
+The results of this model are shown in Fig~\ref{fig:CarrierTwoTemperatureModel}
+\begin{figure}[!h]
+  \centering
+  \resizebox{0.8\textwidth}{!}{\input{tikz/CarrierTwoTemperatureModelResult.tex}}
+  \caption{...}
+  \label{fig:CarrierTwoTemperatureModel}
+\end{figure}

@@ -41,3 +41,9 @@ Now I would like to take you on a short journey through what we have already acc
 
 # Where we are going
 With a completed photocorrelation spectroscope we can already perform a number of interesting experiments, but after validation on <span style="color:red;">Silicon</span> we want to ad an objective to locally excite photocurrents and do some mapping, and add a pump beam using an OPA to do vibrationally controlled photocorrelation experiments and investigate the effect of molecular vibrations on carrier generation and transport [[Ultrafast vibrational control of organohalide perovskite optoelectronic devices using vibrationally promoted electronic resonance]].
+
+
+Hot carrier dynamics is what we want to learn about... 
+Hot carriers are carriers above the band edge.
+we want to know about their collective conductivity -->
+can we measure the theoretical papers results...?
