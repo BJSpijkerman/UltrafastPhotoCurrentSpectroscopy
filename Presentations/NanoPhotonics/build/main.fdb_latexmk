@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1793609219.55873 "build/main.xdv" "build/main.pdf" "build/main" 1793609219.844 0
-  "build/main.xdv" 1793609219.45034 431516 d56ff7ffa8a43178adfae8c39ea8c2c9 "xelatex"
+["xdvipdfmx"] 1793634837.27077 "build/main.xdv" "build/main.pdf" "build/main" 1793634837.7745 0
+  "build/main.xdv" 1793634837.10066 482180 8f61fa900bbb03cb27c7ffd1c7ff8fed "xelatex"
   (generated)
   "build/main.pdf"
   (rewritten before read)
-["xelatex"] 1793609216.08447 "main.tex" "build/main.xdv" "main" 1793609219.84163 0
+["xelatex"] 1793634832.11392 "main.tex" "build/main.xdv" "main" 1793634837.77101 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1775415801 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1775415801 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -74,6 +74,7 @@
   "/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex" 1775415801 321 cdd11262840e01e25374a2d458f15e99 ""
   "/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex" 1775415801 1319 0b2de5126c6cbc295f0eb77f7344b34d ""
   "/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex" 1775415801 3626 2d87dc681257fa32d07a8b3934b10f88 ""
+  "/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex" 1775415801 4228 c39d423dc1a80da31c8c67bf1067f384 ""
   "/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex" 1775415801 325 36322b0789619b270aec5993d5a9ed08 ""
   "/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex" 1775415801 3937 3f208572dd82c71103831da976d74f1a ""
   "/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex" 1775415801 339 be0fe46d92a80e3385dd6a83511a46f2 ""
@@ -294,21 +295,25 @@
   "/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1775415801 5006 d7e899bb5d9717c7f214e9bc0284de7b ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1793010299 4836383 c572514580d785d3906ab5082f8799e7 ""
-  "build/main.aux" 1793609219.44734 5011 874b3929a50bb7b99075b3bae71324d4 "xelatex"
-  "build/main.nav" 1793609219.45034 2765 6883fc402a3f4ecb694c449a7139d987 "xelatex"
-  "build/main.out" 1793609219.45034 635 be87d27c730bc9db237a5a274247b9c2 "xelatex"
+  "build/main.aux" 1793634837.09966 5011 874b3929a50bb7b99075b3bae71324d4 "xelatex"
+  "build/main.nav" 1793634837.10066 2765 6883fc402a3f4ecb694c449a7139d987 "xelatex"
+  "build/main.out" 1793634837.10066 635 be87d27c730bc9db237a5a274247b9c2 "xelatex"
+  "img/TempResponseTielrooij.png" 1793001148.68473 30441 9e02aaa2681b2fc44b8842a232c232e5 ""
   "img/UU_logo_2021_EN_BLACK.png" 1793054496.76992 32322 5fba155486e025a0baa1ab70872fe5bb ""
   "img/firstPCS.png" 1793003404.33737 25660 b1d0cc11280139adc28c49c98bf356ad ""
-  "main.tex" 1793609214.61429 12958 68b93a3328b3bd596403c22538a40f16 ""
+  "main.tex" 1793634830.95558 13282 f90c7affc36fec6ad7b107d302a64b22 ""
   "tikz/BCA.tex" 1793608948.18558 1590 6a39c1fab58004bb098d5d6804446e19 ""
+  "tikz/CarrierHeatModel.tex" 1793611556.38497 6856 b81c12c5251e89a32bf56131be3bbfb9 ""
+  "tikz/CarrierTwoTmodel.tex" 1793610205.92382 2674 4cdbc70a55b19522b1abf054d9249632 ""
   "tikz/LIA.tex" 1793608976.89087 1716 e892bc39b72ba6655f13d0195b4df7ec ""
+  "tikz/LatticeHeatModel.tex" 1793612176.12555 1853 9fb8833cdc54c619c326f7a7683ba9ad ""
   "tikz/augerRecomb.tex" 1793054496.76992 3015 8422447495414f9ed6804839a64dfe54 ""
   "tikz/boxCarArm.tex" 1793018277.06884 3587 aa9cf7673e2b96d1230af4466646e100 ""
   "tikz/boxCarTrig.tex" 1793607594.88443 4421 f361744f9808a4e04ae14ef7063c0e33 ""
   "tikz/boxCarTrigArm.tex" 1793020491.76451 3750 cd1460cccad8e61484d31b089743a558 ""
   "tikz/carrierThreeTModel.tex" 1793085194.92239 1522 7ca69f572f641b933195d5d70807cb92 ""
   "tikz/data.csv" 1793085023.85365 43407 061b17d61d86585784cfe1482be3cb68 ""
-  "tikz/electricalDetectionIssue.tex" 1793008919.38014 3117 fbf12ca155570a959d91a4bcfbe43487 ""
+  "tikz/electricalDetectionIssue.tex" 1793627838.87675 3150 85d8156306ad5391723876015ee8ff49 ""
   "tikz/impactIoniz.tex" 1793054496.76992 3122 795dc3c98c0b11b87f12c9ab1a0a46f7 ""
   "tikz/oneTwoPhotonAbs.tex" 1793054496.76992 3232 e6355b5e9d6af38a69c86a333024ce3d ""
   "tikz/opticalSetup.tex" 1793609194.03408 5570 9ad77865489b88c712e4c9af88b7bca0 ""

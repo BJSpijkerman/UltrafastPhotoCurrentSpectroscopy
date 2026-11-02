@@ -21,7 +21,10 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{calc}
+\usepackage{xcolor}
 
+% Define custom color for the Drude box
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
 
 \definecolor{conductionblue}{RGB}{220, 235, 252}
 \definecolor{valencegreen}{RGB}{225, 245, 225}
@@ -35,7 +38,15 @@
 
 \definecolor{signalred}{RGB}{215, 48, 39}
 \definecolor{gateblue}{RGB}{44, 123, 182}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc, decorations.pathmorphing, matrix}
+\usepackage{amsmath, amssymb}
+\usepackage{xcolor}
 
+\definecolor{panelbg}{RGB}{245, 247, 250}
+\definecolor{panelborder}{RGB}{200, 210, 220}
+\definecolor{carrierred}{RGB}{220, 50, 32}
+\definecolor{latticeblue}{RGB}{0, 114, 178}
+\definecolor{laserorange}{RGB}{230, 120, 20}
 \usetikzlibrary{shapes.geometric, arrows.meta, decorations.markings, calc, fit}
 % Required TikZ libraries:
 \usetikzlibrary{decorations.pathmorphing, decorations, positioning, arrows.meta, circuits.ee.IEC}
@@ -110,7 +121,7 @@
   \begin{beamercolorbox}[wd=\paperwidth, ht=4.5ex, dp=1ex, leftskip=2ex, rightskip=2ex]{frametitle}%
     \usebeamerfont{frametitle}\insertframetitle%
     \hfill%
-    \raisebox{-0.15cm}{\includegraphics[height=1cm]{img/UU_logo_2021_EN_BLACK.png}}% Replace with logo.png
+    \raisebox{-0.5cm}{\includegraphics[height=2cm]{img/UU_logo_2021_EN_BLACK.png}}% Replace with logo.png
   \end{beamercolorbox}%
 }
 
@@ -184,39 +195,28 @@
       \includegraphics[width=\textwidth]{img/firstPCS.png}
     \end{figure}
     \vspace{-5mm}
-    {\tiny\color{gray}{L.V Lukin, \textit{et all}, Chemical Physics Letters, Volume 81, Issue 3, 1981.}}
+    {\tiny\color{gray}{L.V Lukin, \textit{et al}, Chemical Physics Letters, Volume 81, Issue 3, 1981.}}
   \end{minipage}
 \end{frame}
 
 
 \begin{frame}{Experimental Methods}
-  \begin{block}{Conductivity changes}
-    The material responds to illumination by changing its conductivity:
-    \begin{equation}
-      \Delta\sigma=\Delta\mu\Delta N
-    \end{equation}
-  \end{block}
-
-  \begin{columns}[T]
-    \begin{column}{0.48\textwidth}
-      \begin{exampleblock}{Key Properties}
-        \begin{itemize}
-          \item $\Delta\sigma=\Delta\sigma_1+\Delta\sigma_2+C(\tau)$
-          \item $\mu$ is related to carrier-dynamics.
-          \item $N$ is related to carrier-population.
-        \end{itemize}
-      \end{exampleblock}
-    \end{column}
-
-    \begin{column}{0.48\textwidth}
-      \begin{alertblock}{Important Consideration}
-        The different states have their own carrier mobility $\mu_i$.
-        \begin{equation}
-          \Delta\sigma=\sum_i\mu_iN_i - \sigma_0
-        \end{equation}
-      \end{alertblock}
-    \end{column}
-  \end{columns}
+  \begin{minipage}{0.48\textwidth}
+    \begin{block}{Conductivity changes}
+      The material responds to illumination by changing its conductivity:
+      \begin{equation}
+        \Delta\sigma=\Delta\mu\Delta N
+      \end{equation}
+    \end{block}
+  \end{minipage}\hfill
+  \begin{minipage}{0.48\textwidth}
+    \begin{figure}[!h]
+      \centering
+      \includegraphics[width=\textwidth]{img/TempResponseTielrooij.png}
+    \end{figure}
+    \vspace{-5mm}
+    {\tiny\color{gray}Tielrooij, K. J. \textit{et al}. Nature Nanotech 10, 437–443 (2015).}
+  \end{minipage}
 \end{frame}
 
 
@@ -246,7 +246,7 @@
 \section{Simulations}
 
 \begin{frame}{Carrier Two-Temperature Model}
-  \begin{minipage}{0.48\textwidth}
+  \begin{minipage}{0.33\textwidth}
     \begin{itemize}
       \item Carrier population
       \item Carrier temperature
@@ -254,10 +254,9 @@
       \item Conductivity
     \end{itemize}
   \end{minipage} \hfill
-  \begin{minipage}{0.48\textwidth}
+  \begin{minipage}{0.66\textwidth}
     \centering
-%    \includegraphics[width=\textwidth]{}
-    {\tiny\color{gray}{reference to figure}}
+    \resizebox{\textwidth}{!}{\input{tikz/CarrierTwoTmodel.tex}}
   \end{minipage}
 \end{frame}
 
@@ -290,7 +289,8 @@
       C_{\text{c}}\pdv[]{T_{\text{c}}}{t}=-K\left(T_{\text{C}}-T_{\text{l}}\right)+\left(\alpha +\beta I +\Theta n\right)I -\pdv[]{n}{t}\left(E_{\text{g}}+3k_{\text{B}}T_{\text{c}}\right)-n\left(\pdv[]{E_{\text{g}}}{n}\pdv[]{n}{t}+\pdv[]{E_{\text{g}}}{T_{\text{c}}}\pdv[]{T_{\text{c}}}{t}\right)
      \end{equation}
   \end{block}
-
+  \centering
+  \resizebox{\textwidth}{!}{\input{tikz/CarrierHeatModel.tex}}
 \end{frame}
 
 
@@ -301,7 +301,8 @@
       C_{\text{l}}\pdv[]{T_{\text{l}}}{t}=K\left(T_{\text{c}}-T_{\text{l}}\right)
     \end{equation}
   \end{block}
-
+  \centering
+  \resizebox{0.5\textwidth}{!}{\input{tikz/LatticeHeatModel.tex}}
 \end{frame}
 
 
@@ -371,9 +372,9 @@
   \small
   \begin{tabular}{l S[table-format=2.2] S[table-format=1.3] S[table-format=3.1]}
     \toprule
-    \textbf{Component} & {\textbf{Bandwidth [GHz]}} & {\textbf{Noise [$V_{rms}/\sqrt{Hz}$]}} \\
+    \textbf{Component} & {\textbf{Bandwidth}} & {\textbf{Noise}} \\
     \midrule
-    Pre-amp              & {$8$}                    & 0.342          \\
+    Pre-amp              & {$8\,\unit{\giga\hertz}$}                    & {$2.5\,\unit{\pico\hertz}/\sqrt{\unit{\hertz}}$}          \\
     Gated integrator     & 86.15                    & 0.281          \\
     ADC                  & 88.38                    & 0.234          \\
     \bottomrule

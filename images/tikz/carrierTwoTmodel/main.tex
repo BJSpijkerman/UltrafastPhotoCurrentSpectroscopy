@@ -1,0 +1,99 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc}
+\usepackage{xcolor}
+
+% Define custom color for the Drude box
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+
+\begin{document}
+
+\begin{tikzpicture}[
+    >=Stealth,
+    node distance=2.5cm and 3cm,
+    % Box styles
+    subsystem/.style={
+        draw,
+        rectangle,
+        rounded corners=6pt,
+        minimum width=4.2cm,
+        minimum height=2.4cm,
+        align=center,
+        line width=1.2pt
+    },
+    carrier/.style={
+        subsystem,
+        fill=red!10,
+        draw=red!80!black
+    },
+    lattice/.style={
+        subsystem,
+        fill=blue!10,
+        draw=blue!80!black
+    },
+    drude/.style={
+        draw,
+        rectangle,
+        rounded corners=6pt,
+        fill=amber!15,
+        draw=orange!80!black,
+        line width=1.2pt,
+        minimum width=4.5cm,
+        minimum height=2.2cm,
+        align=center
+    }
+]
+
+    % Carrier Subsystem Box
+    \node[carrier] (carriers) {
+        \textbf{\large Carrier System}\\[4pt]
+        Temperature: $T_e$\\[2pt]
+        Density: $N$\\[2pt]
+        Heat Capacity: $C_e(T_e, N)$
+    };
+
+    % Lattice Subsystem Box
+    \node[lattice, below=of carriers] (lattice) {
+        \textbf{\large Lattice System}\\[4pt]
+        Temperature: $T_l$\\[2pt]
+        Heat Capacity: $C_l$
+    };
+
+    % Laser Pulse Source (Input)
+    \node[left=2.5cm of carriers, align=center] (laser) {
+        \textbf{Laser Pulse}\\[2pt]
+        $S(t)$
+    };
+
+    % Laser Input Arrow
+    \draw[->, line width=1.5pt, red!70!black] (laser) -- (carriers) 
+        node[midway, above, font=\small] {Photoexcitation};
+
+    % Electron-Phonon Energy Exchange Arrows
+    \draw[transform canvas={xshift=-12pt}, ->, line width=1.8pt, orange!80!black] (carriers) -- (lattice)
+        node[midway, left, font=\small, align=right] {Energy Transfer\\[-2pt] $K(T_e - T_l)$};
+
+    \draw[transform canvas={xshift=12pt}, ->, line width=1.2pt, blue!70!black] (lattice) -- (carriers);
+
+    % Central Coupling Label
+    \node at ($(carriers)!0.5!(lattice)$) [circle, fill=white, draw=gray!40, inner sep=3pt, font=\small\bfseries] {
+        $K$
+    };
+
+    % Drude Conductivity Output Box
+    \node[drude, right=3.5cm of $(carriers)!0.5!(lattice)$] (drude) {
+        \textbf{\large Drude Conductivity}\\[4pt]
+        $\sigma(T_e, T_l, N) = \frac{N e^2 \tau(T_e, T_l)}{m^*}$\\[6pt]
+%%        {\small Scattering rate:}\\[2pt]
+%%        $\frac{1}{\tau} = \frac{1}{\tau_{ee}(T_e)} + \frac{1}{\tau_{ep}(T_e, T_l)}$
+    };
+
+    % Input arrows to Drude box
+    \draw[->, line width=1.2pt, dashed, red!80!black] (carriers.east) -| ([xshift=-15pt]drude.north)
+        node[midway, above, font=\small] {$T_e, N$};
+
+    \draw[->, line width=1.2pt, dashed, blue!80!black] (lattice.east) -| ([xshift=-15pt]drude.south)
+        node[midway, below, font=\small] {$T_l$};
+
+\end{tikzpicture}
+
+\end{document}

@@ -27,7 +27,7 @@
         % Zoom indicator circle
         \draw[dashed, orange!80!black, thick] (axis cs:0.15,0) rectangle (axis cs:0.25, 1);
             
-        \node[anchor=south, orange!80!black] at (axis cs:0.2, 1) {\tiny $10\mathrm{~ns}$ Pulse};
+        \node[anchor=south, orange!80!black] at (axis cs:0.2, 1) {\tiny $10\,$-$\,100\mathrm{~ns}$ Pulse};
     \end{axis}
 
     % ==========================================
@@ -70,7 +70,7 @@
             -- (axis cs:0, 1.15) -- (axis cs:100, 1.15) -- (axis cs:100, 0) -- (axis cs:140, 0);
 
         % Annotations
-        \node[gateblue, font=\small, anchor=south west] at (axis cs:20, 1.15) {Integration Gate ($100\mathrm{~ns}$)};
+        \node[gateblue, font=\small, anchor=south west] at (axis cs:20, 1.15) {Integration Gate ($100\mathrm{~ns}\,$-$\,10~\mu\mathrm{s}$)};
         \node[signalred, font=\small, anchor=west] at (axis cs:18, 0.6) {$S(t) = A_0 e^{-t/\tau}$};
         \node[font=\footnotesize, color=gateblue!80!black] at (axis cs:7, 0.15) {Integrated Area};
     \end{axis}
