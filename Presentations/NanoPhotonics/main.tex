@@ -36,7 +36,7 @@
 \definecolor{signalred}{RGB}{215, 48, 39}
 \definecolor{gateblue}{RGB}{44, 123, 182}
 
-\usetikzlibrary{shapes.geometric, arrows.meta, decorations.markings, calc}
+\usetikzlibrary{shapes.geometric, arrows.meta, decorations.markings, calc, fit}
 % Required TikZ libraries:
 \usetikzlibrary{decorations.pathmorphing, decorations, positioning, arrows.meta, circuits.ee.IEC}
 
@@ -225,7 +225,7 @@
 
 \begin{frame}{Experimental Setup}
   \centering
-  \resizebox{\textwidth}{!}{\input{tikz/opticalSetup.tex}}
+  \resizebox{0.9\textwidth}{!}{\input{tikz/opticalSetup.tex}}
 \end{frame}
 
 
@@ -330,7 +330,7 @@
 \section{Electrical Detection}
 
 \begin{frame}{Electrical Detection}
-  \begin{minipage}{0.48\textwidth}
+  \begin{minipage}{0.33\textwidth}
     \begin{itemize}
       \item $500\,\unit{\hertz}$ modulation
       \item $1\,\unit{\kilo\hertz}$ repetition rate 
@@ -342,9 +342,10 @@
 %        \subitem \color{MutedSage}{Gated}
     \end{itemize}
   \end{minipage} \hfill
-  \begin{minipage}{0.48\textwidth}
+  \begin{minipage}{0.66\textwidth}
     \centering
-%    \includegraphics[width=\textwidth]{}
+    \resizebox{\textwidth}{!}{\input{tikz/LIA.tex}}
+    \resizebox{\textwidth}{!}{\input{tikz/BCA.tex}}
   \end{minipage}
 \end{frame}
 

@@ -1,0 +1,33 @@
+% ------------------------------------------------------------------
+% 2. BOXCAR AVERAGER SCHEMATIC
+% ------------------------------------------------------------------
+\begin{tikzpicture}[
+    block/.style = {draw, rectangle, minimum height=3em, minimum width=4.5em, align=center, fill=green!5, rounded corners=2pt, font=\small},
+    switch/.style = {draw, circle, inner sep=1.5pt, fill=black},
+    signal/.style = {-{Stealth[length=2mm]}, thick},
+    node distance = 1.8cm and 2cm
+]
+
+\node [block] (input_amp) {Gated\\ Integrator};
+\node [block, right=of input_amp] (hold) {Sample \& Hold\\ (Capacitor)};
+\node [block, right=of hold] (avg) {Exponential /\\ Linear Averager};
+\node [block, right=of avg] (output) {Output Signal\\ (Noise Reduced)};
+
+% Trigger and Gate Generator
+\node [block, below=1.5cm of input_amp] (gate_gen) {Gate Generator\\ (Delay \& Width)};
+\node [block, left=1.2cm of gate_gen] (trigger) {Trigger Unit};
+
+% Connections
+\draw [signal] ([xshift=-2cm]input_amp.west) -- node[above, font=\small] {Pulsed Signal} (input_amp);
+\draw [signal] (input_amp) -- node[above, font=\small] {Gate Open} (hold);
+\draw [signal] (hold) -- (avg);
+\draw [signal] (avg) -- (output);
+
+\draw [signal] ([xshift=-2cm]trigger.west) -- node[above, font=\small] {Ext. Trigger} (trigger);
+\draw [signal] (trigger) -- (gate_gen);
+\draw [signal] (gate_gen) -- node[right, font=\small] {Gate Pulse} (input_amp);
+
+% Surrounding Box
+\node[draw, dashed, inner sep=12pt, label=above:{\bf Boxcar Averager (Gated Integrator)}, fit=(input_amp) (hold) (avg) (gate_gen) (trigger)] {};
+
+\end{tikzpicture}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026/Arch Linux) (preloaded format=xelatex 2026.10.26)  27 OCT 2026 08:18
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026/Arch Linux) (preloaded format=xelatex 2026.10.26)  2 NOV 2026 09:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1783,7 +1783,9 @@ File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowlength=\dimen364
 \pgfarrowwidth=\dimen365
 \pgfarrowlinewidth=\dimen366
-) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/circuits/tikzlibrarycircuits.ee.IEC.code.tex (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
@@ -2041,11 +2043,7 @@ File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
 ] (./tikz/opticalSetup.tex)
 File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
 <img/UU_logo_2021_EN_BLACK.png>
-
-Overfull \vbox (11.242pt too high) detected at line 229
- []
-
-[5
+ [5
 
 ]
 File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
@@ -2125,25 +2123,29 @@ Overfull \vbox (7.02315pt too high) detected at line 327
 
 [12
 
-]
+] (./tikz/LIA.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 13.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 13.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 13.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 13.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 8.0pt on input line 13.
+) (./tikz/BCA.tex)
 File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
 <img/UU_logo_2021_EN_BLACK.png>
  [13
 
 ] (./tikz/electricalDetectionIssue.tex (/usr/share/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 File: mt-LatinModernRoman.cfg 2026/02/26 v1.2 microtype config. file: Latin Modern Roman (RS)
-)
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 31.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 31.
-)
+))
 File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
 <img/UU_logo_2021_EN_BLACK.png>
 
-Overfull \vbox (0.14693pt too high) detected at line 355
+Overfull \vbox (0.14693pt too high) detected at line 356
  []
 
 [14
@@ -2152,23 +2154,23 @@ Overfull \vbox (0.14693pt too high) detected at line 355
 File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
 <img/UU_logo_2021_EN_BLACK.png>
 
-Overfull \vbox (9.35994pt too high) detected at line 366
+Overfull \vbox (9.35994pt too high) detected at line 367
  []
 
 [15
 
 ] (./tikz/boxCarArm.tex)
-Overfull \hbox (0.495pt too wide) detected at line 383
+Overfull \hbox (0.495pt too wide) detected at line 384
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 383
+Overfull \hbox (0.495pt too wide) detected at line 384
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 383
+Overfull \hbox (0.495pt too wide) detected at line 384
 $[]$
  []
 
@@ -2177,17 +2179,17 @@ File: img/UU_logo_2021_EN_BLACK.png Graphic file (type bmp)
 [16
 
 ] (./tikz/boxCarTrigArm.tex)
-Overfull \hbox (0.495pt too wide) detected at line 400
+Overfull \hbox (0.495pt too wide) detected at line 401
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 400
+Overfull \hbox (0.495pt too wide) detected at line 401
 $[]$
  []
 
 
-Overfull \hbox (0.495pt too wide) detected at line 400
+Overfull \hbox (0.495pt too wide) detected at line 401
 $[]$
  []
 
@@ -2228,12 +2230,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BE87D27C730BC9DB237A5A274247B9C2;635.
  ) 
 Here is how much of TeX's memory you used:
- 48346 strings out of 470191
- 1205598 string characters out of 5479696
- 2126018 words of memory out of 5000000
- 76007 multiletter control sequences out of 15000+600000
- 639037 words of font info for 149 fonts, out of 8000000 for 9000
+ 48490 strings out of 470191
+ 1208488 string characters out of 5479696
+ 2126694 words of memory out of 5000000
+ 76139 multiletter control sequences out of 15000+600000
+ 640412 words of font info for 155 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,19n,123p,1001b,2291s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.xdv (19 pages, 405228 bytes).
+Output written on build/main.xdv (19 pages, 431516 bytes).

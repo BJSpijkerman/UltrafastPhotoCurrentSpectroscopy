@@ -36,7 +36,7 @@
     }
 
     % Additional dotted lines for background delay alignment
-    \draw[dottedline] (1.1, -0.2) -- (1.1, 1.2);
+    \draw[dottedline] (5.1, -0.2) -- (5.1, 1.2);
 
     % -------------------------------------------------------------
     % 1. TTL Waveform (Red)
@@ -57,7 +57,7 @@
     % -------------------------------------------------------------
     \draw[orange!90!black, line width=1.2pt] 
         (-0.5, \ySig) -- (0.3, \ySig) 
-        -- (0.3, \ySig+0.7) -- (0.7, \ySig+0.7) -- (0.7, \ySig) 
+%        -- (0.3, \ySig+0.7) -- (0.7, \ySig+0.7) -- (0.7, \ySig) 
         -- (4.3, \ySig) 
         -- (4.3, \ySig+0.7) -- (4.7, \ySig+0.7) -- (4.7, \ySig) 
         -- (8.3, \ySig) 
@@ -67,7 +67,7 @@
         -- (13.5, \ySig);
 
     % Dotted outline for signal pulses
-    \draw[dotted, thick] (0.3, \ySig) -- (0.3, \ySig+0.7) -- (0.7, \ySig+0.7) -- (0.7, \ySig);
+%    \draw[dotted, thick] (0.3, \ySig) -- (0.3, \ySig+0.7) -- (0.7, \ySig+0.7) -- (0.7, \ySig);
     \draw[dotted, thick] (4.3, \ySig) -- (4.3, \ySig+0.7) -- (4.7, \ySig+0.7) -- (4.7, \ySig);
     \draw[dotted, thick] (8.3, \ySig) -- (8.3, \ySig+0.7) -- (8.7, \ySig+0.7) -- (8.7, \ySig);
     \draw[dotted, thick] (12.3, \ySig) -- (12.3, \ySig+0.7) -- (12.7, \ySig+0.7) -- (12.7, \ySig);
@@ -77,7 +77,7 @@
     % -------------------------------------------------------------
     \draw[magenta, line width=1.2pt] 
         (-0.5, \yBg) -- (1.1, \yBg) 
-        -- (1.1, \yBg+0.7) -- (1.5, \yBg+0.7) -- (1.5, \yBg) 
+%        -- (1.1, \yBg+0.7) -- (1.5, \yBg+0.7) -- (1.5, \yBg) 
         -- (5.1, \yBg) 
         -- (5.1, \yBg+0.7) -- (5.5, \yBg+0.7) -- (5.5, \yBg) 
         -- (9.1, \yBg) 
@@ -102,11 +102,11 @@
         node[midway, above] {100ns};
 
     % 100ns Delay Annotation between TTL & Background pulse
-    \draw[dim] (0.5, \yBg + 0.35) -- (1.1, \yBg + 0.35) 
+    \draw[dim] (4.5, \yBg + 0.35) -- (5.1, \yBg + 0.35) 
         node[midway, above] {100ns};
 
     % 100ns Pulse Width on Background Trigger
-    \draw[dim] (5.0, \yBg + 0.9) -- (5.6, \yBg + 0.9) 
+    \draw[dim] (9.0, \yBg + 0.9) -- (9.6, \yBg + 0.9) 
         node[midway, above] {100ns};
 
 \end{tikzpicture}
