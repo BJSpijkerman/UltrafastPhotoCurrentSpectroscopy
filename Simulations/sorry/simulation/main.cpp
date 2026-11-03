@@ -17,7 +17,7 @@ constexpr double omega_0 = 2.0 * M_PI * c / wavelength;
 constexpr double tp = 100e-15;
 const double T_sigma = tp / (4.0 * std::sqrt(std::log(2.0)));
 const double t_peak = 4.0 * T_sigma;
-constexpr double fluence = 0.18 * 1e4;
+constexpr double fluence = 0.18;// * 1e4;
 const double I_0 = fluence / (std::sqrt(M_PI) * T_sigma);
 
 // Material parameters (silicon)

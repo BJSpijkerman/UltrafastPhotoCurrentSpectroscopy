@@ -4,7 +4,7 @@
     height=7.5cm,
     xlabel={Time $\left[\text{ps}\right]$},
     ylabel={Temperature $\left[\text{K}\right]$},
-    xmin=0, xmax=10,
+    xmin=0, xmax=5,
     ymin=200, ymax=2400,
     grid=both,
     grid style={line width=.1pt, draw=gray!20},
@@ -17,8 +17,8 @@
     \addlegendentry{$T_e$ (Electron)}
 
     % Hole Temperature (T_h)
-    \addplot[line width=1.2pt, orange] table[x=time_ps, y=T_h, col sep=comma] {tikz/data.csv};
-    \addlegendentry{$T_h$ (Hole)}
+%    \addplot[line width=1.2pt, orange] table[x=time_ps, y=T_h, col sep=comma] {tikz/data.csv};
+%    \addlegendentry{$T_h$ (Hole)}
 
     % Lattice Temperature (T_l)
     \addplot[line width=1.2pt, blue] table[x=time_ps, y=T_l, col sep=comma] {tikz/data.csv};

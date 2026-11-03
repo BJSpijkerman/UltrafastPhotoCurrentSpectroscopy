@@ -1,0 +1,69 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{amsmath}
+\usetikzlibrary{arrows.meta,decorations.pathmorphing,patterns,positioning}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily, scale=1.2]
+
+  % Define energy levels
+  \def\Ev{0}       % Valence band top
+  \def\Eg{2.2}     % Bandgap height
+  \def\Ec{\Eg}     % Conduction band bottom
+  \def\kT{0.8}     % k_B T energy offset
+  \def\Ehot{4.3}   % Hot carrier energy level
+  \def\Etop{5.2}   % Top of plot
+  \def\Xmax{6.0}   % Width of band diagram
+
+  % 1. Shade Bands
+  % Valence Band
+  \fill[blue!15] (0, -1.2) rectangle (\Xmax, \Ev);
+  % Conduction Band
+  \fill[red!10] (0, \Ec) rectangle (\Xmax, \Etop);
+
+  % 2. Draw Band Edges
+  \draw[very thick, blue!80!black] (0, \Ev) -- (\Xmax, \Ev) 
+    node[right, font=\bfseries] {$E_V$};
+  \draw[very thick, red!80!black] (0, \Ec) -- (\Xmax, \Ec) 
+    node[right, font=\bfseries] {$E_C$};
+
+  % 3. Thermal Energy Threshold Line (E_C + k_B T)
+  \draw[dashed, red!60!black, thick] (0, {\Ec + \kT}) -- (\Xmax, {\Ec + \kT});
+  
+  % Bracket / Dimension for k_B T
+  \draw[line width=0.8pt, <->, >=Stealth] (0.5, \Ec) -- (0.5, {\Ec + \kT})
+    node[midway, right, font=\small] {$k_B T$};
+
+  % 4. Thermalized / "Relaxed" Electron
+  \draw[fill=blue!70!black, draw=white, thick] (1.8, {\Ec + 0.25}) circle (0.13)
+    node[white, font=\tiny\bfseries] {$-$};
+  \node[align=center, anchor=west, font=\small, text=blue!40!black] at (2.1, {\Ec + 0.35}) 
+    {Thermalized Electron\\($E - E_C \approx k_B T$)};
+
+  % 5. Hot Carrier (Hot Electron)
+  \draw[fill=red!60!black, draw=yellow!80!black, line width=1.5pt] (1.8, \Ehot) circle (0.16)
+    node[white, font=\small\bfseries] {$-$};
+  
+  % Glowing / Hot energy halo around the hot electron (using modern decoration)
+  \draw[red!50, thick, decorate, decoration={coil, aspect=0.5, segment length=3pt, amplitude=1.5pt}] 
+    (1.8, \Ehot) circle (0.28);
+
+  % Label for Hot Carrier
+  \draw[<-, >=Stealth, thick, red!70!black] (2.1, \Ehot) -- (3.2, \Ehot)
+    node[right, font=\bfseries\small, text=red!70!black, align=left] 
+    {\textbf{HOT CARRIER}\\[0.2em] $E - E_C \gg k_B T$};
+
+  % Energy excess dimension line
+  \draw[line width=0.8pt, <->, >=Stealth, orange!80!black] (1.2, \Ec) -- (1.2, \Ehot)
+    node[midway, left, font=\small\bfseries, orange!80!black] {$\Delta E > k_B T$};
+
+  % 6. Thermalization Arrow (Cooling process)
+  \draw[-{Stealth[scale=1.2]}, decorate, decoration={snake, amplitude=1.2pt, segment length=6pt}, thick, orange!90!black] 
+    (1.8, {\Ehot - 0.3}) -- (1.8, {\Ec + \kT + 0.4})
+    node[midway, right=2pt, font=\scriptsize\itshape, align=left] {Thermalization via\\phonon emission};
+
+  % 7. Energy Axis
+  \draw[-{Stealth[scale=1.2]}, line width=1.2pt] (-0.5, -1.2) -- (-0.5, \Etop)
+    node[above, font=\bfseries] {Energy ($E$)};
+
+\end{tikzpicture}
+\end{document}

@@ -164,17 +164,14 @@
 \begin{frame}{Motivation \& Background}
   \begin{minipage}{0.48\textwidth}
     \begin{itemize}
-      \item \textbf{Shockley-Quaser:} Thermodynamical limiting efficiency for solar panels.
       \item \textbf{Hot carrier-dynamics:} Very little known about hot state conductivity.
       \item \textbf{Photocurrent spectroscopy:} Measuring carrier-dynamics with pico-second resolution.
+      \item \textbf{Shockley-Quaser:} Thermodynamical limiting efficiency for solar panels.
     \end{itemize}
   \end{minipage}\hfill
   \begin{minipage}{0.48\textwidth}
-    \begin{figure}[!h]
-      \centering
-%      \includegraphics[width=\textwidth]{}
-      \caption{}
-    \end{figure}
+    \centering
+    \resizebox{\textwidth}{!}{\input{tikz/HotCarrier.tex}}
   \end{minipage}
 \end{frame}
 
@@ -226,21 +223,46 @@
 \end{frame}
 
 
-\section{Silicon}
-\begin{frame}{Silicon}
+\begin{frame}{Different Photo- current/ conductivity Techniques}
   \begin{minipage}{0.48\textwidth}
     \begin{itemize}
-      \item Band structure
-      \item Indirect bandgap
-      \item Hot carriers
+      \item Correlation spectroscopy
+      \item Vibrationally controlled spectroscopy
+      \item Near field
     \end{itemize}
-  \end{minipage} \hfill
+  \end{minipage}\hfill
   \begin{minipage}{0.48\textwidth}
-    \centering
-%    \includegraphics[width=\textwidth]{}
-    {\tiny\color{gray}{images on silicon}}
+    \begin{figure}[!h]
+      \flushleft
+      \includegraphics[width=0.7\textwidth]{img/BakulinSetup.png}
+    \end{figure}
+    \vspace{-2mm}
+    {\tiny\color{gray}Bakulin, A. A. \textit{et al.} Nat Commun, 7880 (2015).}
+    \begin{figure}[!h]
+      \flushleft
+      \includegraphics[width=0.7\textwidth]{img/nanoScopy.png}
+    \end{figure}
+    \vspace{-2mm}
+    {\tiny\color{gray}Qiong Ma, \textit{et al}. Nature Reviews Physics 5, 170-184 (2023).}
   \end{minipage}
 \end{frame}
+
+
+%\section{Silicon}
+%\begin{frame}{Silicon}
+%  \begin{minipage}{0.48\textwidth}
+%    \begin{itemize}
+%      \item Band structure
+%      \item Indirect bandgap
+%      \item Hot carriers
+%    \end{itemize}
+%  \end{minipage} \hfill
+%  \begin{minipage}{0.48\textwidth}
+%    \centering
+%    \includegraphics[width=\textwidth]{}
+%    {\tiny\color{gray}{images on silicon}}
+%  \end{minipage}
+%\end{frame}
 
 % --- Section 3 ---
 \section{Simulations}
@@ -374,9 +396,9 @@
     \toprule
     \textbf{Component} & {\textbf{Bandwidth}} & {\textbf{Noise}} \\
     \midrule
-    Pre-amp              & {$8\,\unit{\giga\hertz}$}                    & {$2.5\,\unit{\pico\hertz}/\sqrt{\unit{\hertz}}$}          \\
-    Gated integrator     & 86.15                    & 0.281          \\
-    ADC                  & 88.38                    & 0.234          \\
+    Pre-amp              & {$8\,\unit{\giga\hertz}$}                    & {$0.5\,\unit{\pico\ampere}/\sqrt{\unit{\hertz}}$}          \\
+    Gated integrator     & {$4\,\unit{\giga\hertz}$}                    & {$2.5\,\unit{\nano\volt}/\sqrt{\unit{\hertz}}$}          \\
+%    ADC                  & {$50\,\unit{\mega\hertz}$}                    &           \\
     \bottomrule
   \end{tabular}
 \end{frame}
@@ -391,39 +413,29 @@
     \toprule
     \textbf{Trigger stage} & {\textbf{Imparted delay}} & {\textbf{Phase jitter [ppm/Hz]}} & {\textbf{Pulse duration}}\\
     \midrule
-    Rough delay             & {$1\,\unit{\milli\second}$}                 & 0.342          & {$1\,\unit{\micro\second}$}\\
-    Fine delay              & {$100\,\unit{\nano\second}$}                & 0.281          & {$1\,\unit{\micro\second}$}\\
-    Trigger generation      & {$500\,\unit{\pico\second}$}                & 0.234          & {$100\,\unit{\nano\second}$}\\
+    Rough delay             & {$1\,\unit{\milli\second}$}                 & {$7\,\text{ppm}$}          & {$1\,\unit{\micro\second}$}\\
     \bottomrule
   \end{tabular}
 \end{frame}
 
 
-\begin{frame}{Electrical Detection}
-
-  \begin{block}{SNR formula}
-    The formula for signal-to-noise ratio assuming $abc$
-    \begin{equation}
-      SNR = some complicated formula
-    \end{equation}
-  \end{block}
-  
-  \begin{figure}[!h]
-    \centering
+%\begin{frame}{Electrical Detection}
+%
+%  \begin{block}{SNR formula}
+%    The formula for signal-to-noise ratio assuming $abc$
+%    \begin{equation}
+%      SNR = some complicated formula
+%    \end{equation}
+%  \end{block}
+%  
+%  \begin{figure}[!h]
+%    \centering
 %    \includegraphics[width=\textwidth]{}
-    \caption{}
-  \end{figure}
+%    \caption{}
+%  \end{figure}
+%
+%\end{frame}
 
-\end{frame}
 
-
-\begin{frame}{Different Photo- current/ conductivity Techniques}
-  \begin{itemize}
-    \item Correlation spectroscopy
-    \item Vibrationally constrolled spectroscopy
-    \item Near field
-    \item ...?
-  \end{itemize}
-\end{frame}
 
 \end{document}
