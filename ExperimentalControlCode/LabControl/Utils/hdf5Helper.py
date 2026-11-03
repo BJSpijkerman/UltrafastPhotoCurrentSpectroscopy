@@ -1,54 +1,100 @@
+from typing import Any, Dict, Optional, Union
 import h5py
 
 
 class HDF5Helper:
 
-	def __init__(self):
-		self.file = None
-		self.datasets = []
-		self.groups = []
+    def __init__(self, file_path: Optional[str] = None, mode: str = "a"):
+        self.file: Optional[h5py.File] = None
+        self.groups: set[str] = set()
+        self.datasets: set[str] = set()
 
+        if file_path:
+            self.connect_to_file(file_path, mode=mode)
 
-	def connect_to_file(self, file_path: str) -> None:
-		try:
-			self.file = h5py.File(file_path, "w")
-		except Exception as e:
-			print(f"Error: in opening file {file_path} with {e}")
+    def connect_to_file(self, file_path: str, mode: str = "a") -> None:
+        """Connect to an HDF5 file. Mode 'a' opens/creates for read/write."""
+        try:
+            self.file = h5py.File(file_path, mode)
+        except Exception as e:
+            print(f"Error opening file {file_path}: {e}")
+            self.file = None
 
-		for group in sub_groups:
-			group = self.file.create_subgroup(group)
-			self.datasets.append(group)
+    def set_metadata(self, param_dict: Dict[str, Any]) -> None:
+        """Set key-value attributes at the root level."""
+        if not self.file:
+            print("Error: No HDF5 file connected.")
+            return
 
+        for key, value in param_dict.items():
+            self.file.attrs[key] = value
 
-	def set_metadata(self, param_dict: dict) -> None:
-		if not self.file:
-			print("No h5 file connected to writer")
-			return
+    def add_group(self, group_name: str) -> None:
+        """Create and register a group."""
+        if not self.file:
+            print("Error: No HDF5 file connected.")
+            return
 
-		for key in param_dict.keys:
-			self.file.attrs[key] = param_dict["keys"]
+        if group_name not in self.file:
+            self.file.create_group(group_name)
 
+        self.groups.add(group_name)
 
-	def add_group(group_name: str) -> None:
-		self.groups.append(group_name)
+    def create_dataset(
+        self,
+        group_name: str,
+        dataset_name: str,
+        dtype: Union[str, type] = "f8",  # 'f8' for float64, str / 'string' for text
+        shape: tuple = (0,),
+        maxshape: tuple = (None,),
+    ) -> None:
+        """Create a resizable dataset for floats, strings, or integers."""
+        if not self.file:
+            print("Error: No HDF5 file connected.")
+            return
 
+        if group_name not in self.groups:
+            print(f"Error: Group '{group_name}' not registered.")
+            return
 
-	def create_measurement(self, group: str, title: str) -> None:
-		if !(group in self.groups):
-			print("Error: group was not registered. Register with HDF5Helper.add_group(\"group_name\")."
-			return
+        # Resolve string type to HDF5 variable-length UTF-8
+        if dtype in (str, "string", "str"):
+            resolved_dtype = h5py.string_dtype(encoding="utf-8")
+        else:
+            resolved_dtype = dtype
 
-		dataset = self.file[group].create_dataset(title)
-		self.datasets.append(dataset)
+        dataset_path = f"{group_name}/{dataset_name}"
+        if dataset_path not in self.file:
+            self.file[group_name].create_dataset(
+                dataset_name, shape=shape, maxshape=maxshape, dtype=resolved_dtype
+            )
 
+        self.datasets.add(dataset_path)
 
-	def stream_data(self, group: str, dataset: str, data) -> None:
-		if not ((group in self.groups) and (dataset in self.datasets)):
-			print("Error: group or dataset was not registered.")
-			return
+    def append_data(self, group_name: str, dataset_name: str, data: Any) -> None:
+        """Append a single numerical value or string to a 1D dataset."""
+        if not self.file:
+            print("Error: No HDF5 file connected.")
+            return
 
-		self.file[group][dataset][i] = data
+        dataset_path = f"{group_name}/{dataset_name}"
+        if dataset_path not in self.datasets:
+            print(f"Error: Dataset '{dataset_path}' not registered.")
+            return
 
+        dset = self.file[group_name][dataset_name]
 
-	def close_file(self) -> None:
-		self.file.close()
+        current_size = dset.shape[0]
+        dset.resize((current_size + 1,))
+        dset[current_size] = data
+
+    def close_file(self) -> None:
+        if self.file:
+            self.file.close()
+            self.file = None
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.close_file()

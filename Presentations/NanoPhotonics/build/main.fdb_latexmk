@@ -1,4 +1,5 @@
 # Fdb version 4
+<<<<<<< Updated upstream
 ["xdvipdfmx"] 1793690521.94165 "build/main.xdv" "build/main.pdf" "build/main" 1793690522.62582 0
   "build/main.xdv" 1793690521.78817 456356 d572101e49ff084af9c0fff0e5b413be "xelatex"
   (generated)
@@ -6,6 +7,14 @@
   (rewritten before read)
 ["xelatex"] 1793690516.76862 "main.tex" "build/main.xdv" "main" 1793690522.62212 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
+=======
+["xdvipdfmx"] 1793644963.97269 "build/main.xdv" "build/main.pdf" "build/main" 1793644964.40128 0
+  "build/main.xdv" 1793644963.82138 482180 7ea9f2f6b0c9c1f9d337cb8ce47b14bb "xelatex"
+  (generated)
+  "build/main.pdf"
+  (rewritten before read)
+["xelatex"] 1793644958.38139 "main.tex" "build/main.xdv" "main" 1793644964.39681 0
+>>>>>>> Stashed changes
   "/usr/share/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1775415801 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1775415801 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1775415801 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -294,6 +303,7 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1775415801 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1775415801 5006 d7e899bb5d9717c7f214e9bc0284de7b ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
+<<<<<<< Updated upstream
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1793010299 4836383 c572514580d785d3906ab5082f8799e7 ""
   "build/main.aux" 1793690521.78587 4410 f82b20fa50b71fe5cbc6e2f0a48a2691 "xelatex"
   "build/main.nav" 1793690521.78817 2435 806bd6ecd89ec33d53a2df4f3ade2cb9 "xelatex"
@@ -320,6 +330,31 @@
   "tikz/impactIoniz.tex" 1793054496.76992 3122 795dc3c98c0b11b87f12c9ab1a0a46f7 ""
   "tikz/oneTwoPhotonAbs.tex" 1793054496.76992 3232 e6355b5e9d6af38a69c86a333024ce3d ""
   "tikz/opticalSetup.tex" 1793609194.03408 5570 9ad77865489b88c712e4c9af88b7bca0 ""
+=======
+  "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1793372260 5610413 c5cfa1831d6b7f07a861198f9995f070 ""
+  "build/main.aux" 1793644963.8196 5011 874b3929a50bb7b99075b3bae71324d4 "xelatex"
+  "build/main.nav" 1793644963.82138 2765 6883fc402a3f4ecb694c449a7139d987 "xelatex"
+  "build/main.out" 1793644963.82138 635 be87d27c730bc9db237a5a274247b9c2 "xelatex"
+  "img/TempResponseTielrooij.png" 1793644800.88971 30441 9e02aaa2681b2fc44b8842a232c232e5 ""
+  "img/UU_logo_2021_EN_BLACK.png" 1793355669.13084 32322 5fba155486e025a0baa1ab70872fe5bb ""
+  "img/firstPCS.png" 1793355669.13084 25660 b1d0cc11280139adc28c49c98bf356ad ""
+  "main.tex" 1793644957.1729 13282 d848e1dc46954b0e1add38c951dd740d ""
+  "tikz/BCA.tex" 1793644800.88971 1590 6a39c1fab58004bb098d5d6804446e19 ""
+  "tikz/CarrierHeatModel.tex" 1793644800.88971 6856 b81c12c5251e89a32bf56131be3bbfb9 ""
+  "tikz/CarrierTwoTmodel.tex" 1793644800.88971 2674 4cdbc70a55b19522b1abf054d9249632 ""
+  "tikz/LIA.tex" 1793644800.88971 1716 e892bc39b72ba6655f13d0195b4df7ec ""
+  "tikz/LatticeHeatModel.tex" 1793644800.88971 1853 9fb8833cdc54c619c326f7a7683ba9ad ""
+  "tikz/augerRecomb.tex" 1793355669.13084 3015 8422447495414f9ed6804839a64dfe54 ""
+  "tikz/boxCarArm.tex" 1793355669.13217 3587 aa9cf7673e2b96d1230af4466646e100 ""
+  "tikz/boxCarTrig.tex" 1793644800.88971 4421 f361744f9808a4e04ae14ef7063c0e33 ""
+  "tikz/boxCarTrigArm.tex" 1793355669.13217 3750 cd1460cccad8e61484d31b089743a558 ""
+  "tikz/carrierThreeTModel.tex" 1793374763.15728 1522 7ca69f572f641b933195d5d70807cb92 ""
+  "tikz/data.csv" 1793374763.15728 43407 061b17d61d86585784cfe1482be3cb68 ""
+  "tikz/electricalDetectionIssue.tex" 1793644800.88971 3150 85d8156306ad5391723876015ee8ff49 ""
+  "tikz/impactIoniz.tex" 1793355669.13217 3122 795dc3c98c0b11b87f12c9ab1a0a46f7 ""
+  "tikz/oneTwoPhotonAbs.tex" 1793355669.13217 3232 e6355b5e9d6af38a69c86a333024ce3d ""
+  "tikz/opticalSetup.tex" 1793644800.88971 5570 9ad77865489b88c712e4c9af88b7bca0 ""
+>>>>>>> Stashed changes
   (generated)
   "build/main.aux"
   "build/main.log"
