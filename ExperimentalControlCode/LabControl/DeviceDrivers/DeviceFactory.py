@@ -1,9 +1,9 @@
 import logging
 from types import SimpleNamespace
 from typing import Dict, Any, Type, Union
-from LabControl.devices.SR830Control import SR830
-from LabControl.devices.StageControl import ZaberDelayStage
-from LabControl.devices.AsyncSR830Control import AsyncSR830
+from LabControl.DeviceDrivers.SR830 import SR830
+from LabControl.DeviceDrivers.ZaberDelayStage import ZaberDelayStage
+from LabControl.DeviceDrivers.AsyncSR830 import AsyncSR830
 
 
 class DeviceFactory:
