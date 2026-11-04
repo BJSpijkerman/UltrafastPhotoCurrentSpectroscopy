@@ -84,6 +84,9 @@ class SR830:
 		time.sleep(0.5)
 		self.wait_until_ready()
 
+	def set_gain(self, gain_lvl: int) -> None:
+		self._send_cmd(f"SENS {gain_lvl}")
+
 	def set_time_constant(
 			self, tau_setting: int, wait_for_settle: bool = True
 			) -> None:
