@@ -187,8 +187,8 @@
   },
   "active": "fb534030ecc47e9a",
   "lastOpenFiles": [
-    "Experimental Control/LabControl/DeviceDrivers/ZaberDelayStage.py.md",
     "Experimental Control/LabControl/DeviceDrivers/SR830.py.md",
+    "Experimental Control/LabControl/DeviceDrivers/ZaberDelayStage.py.md",
     "Experimental Control/LabControl/DeviceDrivers/DeviceFactory.py.md",
     "Experimental Control/LabControl/DeviceDrivers/AsyncSR830.py.md",
     "Experimental Control/LabControl/Devices/Stage.py.md",

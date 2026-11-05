@@ -72,7 +72,7 @@ class ZaberDelayStage:
 
 	def home(self, force: bool=False) -> None:
 		if force or not self.axis.is_homed():
-			self.axis.home()
+			self.axis.home(wait_until_idle=True)
 
 	def stop(self) -> None:
 		self.axis.stop()

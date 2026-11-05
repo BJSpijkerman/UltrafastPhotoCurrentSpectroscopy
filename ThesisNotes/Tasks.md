@@ -10,6 +10,7 @@
 | <input type="checkbox"> | Documentation                      | Of course all documentation needs to be either updated or added "hdf5Helper.py", "PCspectroscopy.py", "ExperimentUI.py", "LockInUI.py", "StageUI.py"                                                                               |
 | <input type="checkbox"> | Box car device                     | A driver and high level class need to be contructed in the LabControl package, also the relevant firmware needs to be created.                                                                                                     |
 |                         | Device Driver updates              | Add loggers to the device drivers.                                                                                                                                                                                                 |
+|                         | Experiment UI update               | add text bases progress feedback (i/ N) steps (j/ M) cycles and automatic file and directory generation from time and measurement name                                                                                             |
 
 ## Simulation
 

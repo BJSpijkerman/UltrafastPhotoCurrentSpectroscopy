@@ -17,9 +17,9 @@ class DeviceLogger:
 		self._logger.setLevel(logging.DEBUG)
 
 		# Prevent duplicate handlers if re-initialized
-		if not self.logger.handlers:
+		if not self._logger.handlers:
 			# Console handler
-			console_handler = logging.StreamHandler(sys.out)
+			console_handler = logging.StreamHandler(sys.stdout)
 			console_handler.setLevel(console_level)
 			console_fmt = logging.Formatter("[%(levelname)s] %(message)s")
 			console_handler.setFormatter(console_fmt)
@@ -48,4 +48,4 @@ class DeviceLogger:
 		self._logger.warning(msg, *args, **kwargs)
 
 	def error(self, msg: str, *args, **kwargs) -> None:
-		self.logger.error(msg, *args, **kwargs)
+		self._logger.error(msg, *args, **kwargs)

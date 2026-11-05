@@ -1,5 +1,7 @@
+import json
 from typing import Any, Dict, Optional, Union
 import h5py
+import numpy as np
 
 
 class HDF5Helper:
@@ -20,14 +22,37 @@ class HDF5Helper:
             print(f"Error opening file {file_path}: {e}")
             self.file = None
 
+
     def set_metadata(self, param_dict: Dict[str, Any]) -> None:
-        """Set key-value attributes at the root level."""
+        """Set key-value attributes at the root level safely."""
         if not self.file:
             print("Error: No HDF5 file connected.")
             return
 
         for key, value in param_dict.items():
-            self.file.attrs[key] = value
+            # Skip None values as HDF5 has no native None type
+            if value is None:
+                continue
+
+            try:
+                # 1. Standard supported types: numbers, strings, bools, numpy arrays
+                if isinstance(value, (int, float, str, bool, np.number, np.ndarray)):
+                    self.file.attrs[key] = value
+
+                # 2. Convert lists/dicts to JSON strings so structured params are preserved
+                elif isinstance(value, (dict, list, tuple)):
+                    try:
+                        self.file.attrs[key] = json.dumps(value)
+                    except (TypeError, ValueError):
+                        # Fallback to string representation if non-JSON serializable
+                        self.file.attrs[key] = str(value)
+
+                # 3. Fallback for any other custom Python objects
+                else:
+                    self.file.attrs[key] = str(value)
+
+            except Exception as e:
+                print(f"Warning: Could not set metadata key '{key}' (value: {value}): {e}")
 
     def add_group(self, group_name: str) -> None:
         """Create and register a group."""

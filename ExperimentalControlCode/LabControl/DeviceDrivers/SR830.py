@@ -14,7 +14,7 @@ class SR830:
 			}
 
 	def __init__(self, port: str, baudrate: int = 9600, timeout: float = 2.0):
-		self.client = self.RS232Client(port=port, baudrate=baudrate, timeout=timeout)
+		self.client = RS232Client(port=port, baudrate=baudrate, timeout=timeout)
 
 	def _send_cmd(self, command: str) -> bool:
 		return self.client.send(f"{command.strip()}\r", add_crlf=False)
