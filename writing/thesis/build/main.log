@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026/Arch Linux) (preloaded format=xelatex 2026.10.30)  30 OCT 2026 16:44
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026/Arch Linux) (preloaded format=xelatex 2026.10.26)  6 NOV 2026 17:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -474,7 +474,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ]
 Chapter 2.
-(./chapters/photoCurrentSpectroscopy.tex)
+(./chapters/photoCurrentSpectroscopy.tex
+
+./chapters/photoCurrentSpectroscopy.tex:6: LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6   \includegraphics[width=0.5\textwidth]{}
+                                             
+I could not locate the file with any of these extensions:
+.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP,.ps,.PS,.eps,.EPS,.mps,.MPS
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
 Underfull \hbox (badness 10000) in paragraph at lines 1--20
 
  []
@@ -484,14 +499,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--20
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 23785 strings out of 469581
- 618689 string characters out of 5465297
- 1523531 words of memory out of 5000000
- 52045 multiletter control sequences out of 15000+600000
+ 23833 strings out of 470191
+ 619192 string characters out of 5479696
+ 1521896 words of memory out of 5000000
+ 52047 multiletter control sequences out of 15000+600000
  630514 words of font info for 58 fonts, out of 8000000 for 9000
- 372 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  84i,21n,104p,1033b,2226s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/main.xdv (5 pages, 194492 bytes).
+Output written on build/main.xdv (5 pages, 200456 bytes).

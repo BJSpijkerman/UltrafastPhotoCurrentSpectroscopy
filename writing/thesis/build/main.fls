@@ -221,6 +221,7 @@ OUTPUT build/main.aux
 INPUT ./chapters/twoTemperatureModel.tex
 INPUT ./chapters/twoTemperatureModel.tex
 INPUT chapters/twoTemperatureModel.tex
+INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT build/main.xdv
@@ -242,4 +243,5 @@ INPUT tikz/CarrierTwoTemperatureModelData.csv
 INPUT ./chapters/photoCurrentSpectroscopy.tex
 INPUT ./chapters/photoCurrentSpectroscopy.tex
 INPUT chapters/photoCurrentSpectroscopy.tex
+INPUT /usr/share/texmf-dist/tex/latex/tools/.tex
 INPUT build/main.aux

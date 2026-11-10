@@ -7,3 +7,5 @@ We use two IC's to generate set and reset signals spaces by approximately $100\,
 
 As an expansion of this design I have discussed with Gemini AI what would be a clever layout of this design and it came up with this:
 ![[Gemeni_image.jpg]]
+
+Find updated designs fro the detection arms and trigger generation circuits in [[Box car arm]] and [[Trigger generation]]
