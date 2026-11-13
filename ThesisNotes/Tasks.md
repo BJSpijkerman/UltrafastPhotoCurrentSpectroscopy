@@ -32,7 +32,15 @@
 |                         | Writing thesis      | Start writing parts of the thesis. Mainly experimental setup, Two temperature modeling and theory.      |
 # Electrical detection
 
-| Completion              | Task       | Description                                           |
-| ----------------------- | ---------- | ----------------------------------------------------- |
-| <input type="checkbox"> | Design PCB | The PCB of the box car averager needs to be designed. |
+| Completion              | Task                 | Description                                                    |
+| ----------------------- | -------------------- | -------------------------------------------------------------- |
+| <input type="checkbox"> | Design PCB           | The PCB of the box car averager needs to be designed.          |
+|                         | Design power circuit | The power circuit of the box car averager needs to be designed |
 
+# Stage issues
+
+| Task                 | Description                                          |
+| -------------------- | ---------------------------------------------------- |
+| Stage mounting plate | Construct mechanical drawings of mounting plate      |
+| Feet placement       | Run FEM simulations to optimize feet placement       |
+| Finish design        | Send design to Peter vd Belt to manufacture the part |
