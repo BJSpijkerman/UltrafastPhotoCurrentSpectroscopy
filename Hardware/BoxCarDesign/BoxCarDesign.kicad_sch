@@ -3612,6 +3612,52 @@
 		)
 	)
 	(sheet
+		(at 113.03 163.83)
+		(size 27.94 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "12e32d5e-35ad-4ce7-b2a3-739b5c707179")
+		(property "Sheetname" "Power Circuit"
+			(at 113.03 163.1184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 113.03 168.2246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BoxCarDesign"
+				(path "/50793efa-8006-4cd9-925a-71bd5e6e727a"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 86.36 88.9)
 		(size 31.75 8.89)
 		(exclude_from_sim no)

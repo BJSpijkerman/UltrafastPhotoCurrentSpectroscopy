@@ -466,6 +466,10 @@
     [
       "4c1d84b2-9719-4b27-9505-2801564b8b55",
       "Timing Circuit"
+    ],
+    [
+      "12e32d5e-35ad-4ce7-b2a3-739b5c707179",
+      "Power Circuit"
     ]
   ],
   "text_variables": {},

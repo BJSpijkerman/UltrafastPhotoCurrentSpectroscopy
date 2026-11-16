@@ -17,6 +17,4 @@ To ensure fitting to the optical table we have measured the holes in the optical
 For a load of $2.2$ metric tonnes we get the following results using a FEM model
 ![[simulation.png]]
 
-Which was done using standard linear deformation equation
-$$
-$$
+With this it is decided that making the mounting plate out of steel is good enough for our purposes in any configuration of the feet, as the current configuration would definitely be most susceptible to bending.
