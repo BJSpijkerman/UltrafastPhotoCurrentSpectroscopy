@@ -447,7 +447,7 @@
         "uuid": "50793efa-8006-4cd9-925a-71bd5e6e727a"
       }
     ],
-    "used_designators": "#FLG1-6,#GND1,#PWR1-94,ADC1-2,C1-9,C11-34,C\\-LPF1,C_LPF1-2,Cc_TIA_GATE1-2,Cf_INT1-2,Cf_TIA1-2,H1,I1,Integrator1-2,J1,LASER_TTL1-2,MES1-2,Pre\\-amp_(TIA)1-2,R1-3,R\\-LPF1,RF\\-switch1-2,RP2,R_LPF1-2,R_set1,Rext3,Rf_INT1-2,Rf_TIA1-2,Rough\\-Delay\\-1ms1,SIGNAL1,Signal\\-in1,Signal_in1-2,Trigger\\-in1,Trigger_in1,U1-4,V1-3",
+    "used_designators": "#FLG1-6,#GND1,#PWR1-105,ADC1-2,C1-9,C11-35,C\\-LPF1,C_LPF1-2,C_input1-3,Cc_TIA_GATE1-2,Cf_INT1-2,Cf_TIA1-2,D1,H1,I1,Integrator1-2,J1-2,L1,LASER_TTL1-2,MES1-2,Pre\\-amp_(TIA)1-2,Q1,R1-8,R\\-LPF1,RF\\-switch1-2,RP2,R_LPF1-2,R_set1,Rext3,Rf_INT1-2,Rf_TIA1-2,Rough\\-Delay\\-1ms1,SIGNAL1,Signal\\-in1,Signal_in1-2,Trigger\\-in1,Trigger_in1,U1-4,V1-3",
     "variants": []
   },
   "sheets": [

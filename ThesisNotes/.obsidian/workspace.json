@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental Setup/Stage Mounting Plate.md",
+                "file": "Experimental Setup/Electrical Detection/Power circuit/AP63203.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stage Mounting Plate"
+              "title": "AP63203"
             }
           }
         ],
@@ -202,13 +202,17 @@
   },
   "active": "a5be5aba90c17097",
   "lastOpenFiles": [
+    "Experimental Setup/Electrical Detection/Datasheets/74LVC1G123.md",
+    "Experimental Setup/Electrical Detection/Power circuit/AP63203.md",
+    "Daily log/10-11-2026.md",
+    "Experimental Setup/Electrical Detection/Power circuit",
+    "Daily log/9-11-2026.md",
+    "Daily log/26-10-2026.md",
+    "Experimental Setup/Stage Mounting Plate.md",
     "Experimental Setup/Time resolution and hot carrier identification.md",
     "Experimental Setup/Electrical Detection/Electrical Detection principle.md",
-    "Experimental Setup/Stage Mounting Plate.md",
-    "Daily log/10-11-2026.md",
     "Daily log/15-10-2026.md",
     "Daily log/20-10-2026.md",
-    "Daily log/26-10-2026.md",
     "img/mountingPlate/simulation.png",
     "img/mountingPlate/stageTilt.png",
     "img/mountingPlate/stageMechanicalDrawing.png",
@@ -230,11 +234,8 @@
     "Tasks.md",
     "Physics notes/Auger recombination.md",
     "Experimental Setup/Electrical Detection/Trigger generation.md",
-    "Experimental Setup/Optical Setup.md",
-    "Experimental Setup/Electrical Detection/Box car arm.md",
     "img/mountingPlate/Screenshot_20261110_085749.png",
     "img/mountingPlate",
-    "Untitled.md",
     "img/TTM_NLM/TTMresultResistivity.png",
     "img/TTM_NLM/TTMresult_adjusted.png",
     "img/TTM_NLM/TTMresult.png",
@@ -246,7 +247,6 @@
     "img/elecricalDetection/CIRCUITS FOR UPC_1.pdf",
     "img/elecricalDetection/BoxCar.pdf",
     "img/TTM_NLM/excitationImg.pdf",
-    "img/setup.pdf",
-    "img/impactIonization"
+    "img/setup.pdf"
   ]
 }
