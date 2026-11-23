@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "FootprintLibrary") (type "KiCad") (uri "/home/brm/UltrafastPhotoCurrentSpectroscopy/Hardware/FootprintLibrary.pretty") (options "") (descr ""))
+	(lib (name "Pads") (type "KiCad") (uri "/home/brm/UltrafastPhotoCurrentSpectroscopy/Hardware/FootprintLibrary/Pads.pretty") (options "") (descr ""))
+)
