@@ -447,7 +447,7 @@
         "uuid": "50793efa-8006-4cd9-925a-71bd5e6e727a"
       }
     ],
-    "used_designators": "#FLG1-6,#GND1,#PWR1-105,ADC1-2,C1-9,C11-35,C\\-LPF1,C_LPF1-2,C_input1-3,Cc_TIA_GATE1-2,Cf_INT1-2,Cf_TIA1-2,D1,H1,I1,Integrator1-2,J1-2,L1,LASER_TTL1-2,MES1-2,Pre\\-amp_(TIA)1-2,Q1,R1-8,R\\-LPF1,RF\\-switch1-2,RP2,R_LPF1-2,R_set1,Rext3,Rf_INT1-2,Rf_TIA1-2,Rough\\-Delay\\-1ms1,SIGNAL1,Signal\\-in1,Signal_in1-2,Trigger\\-in1,Trigger_in1,U1-4,V1-3",
+    "used_designators": "#FLG1-6,#GND1,#PWR1-111,ADC1-2,C1-9,C11-44,C\\-LPF1,C_FB1,C_LPF1-2,C_input1-3,C_out1-2,Cc_TIA_GATE1-2,Cf_INT1-2,Cf_TIA1-2,D1-3,H1,I1,Integrator1-2,J1-2,L1-4,LASER_TTL1-2,L_output1,MES1-2,Pre\\-amp_(TIA)1-2,Q1,R1-11,R\\-LPF1,RF\\-switch1-2,RP2,R_LPF1-2,R_set1,Rext3,Rf_INT1-2,Rf_TIA1-2,Rough\\-Delay\\-1ms1,SIGNAL1,Signal\\-in1,Signal_in1-2,Trigger\\-in1,Trigger_in1,U1-4,V1-3",
     "variants": []
   },
   "sheets": [
@@ -468,8 +468,52 @@
       "Timing Circuit"
     ],
     [
-      "12e32d5e-35ad-4ce7-b2a3-739b5c707179",
+      "f2724169-f5be-4651-80b0-4f9ab8b19d5c",
       "Power Circuit"
+    ],
+    [
+      "aab1d566-81c0-43b4-8274-21f73f156e1f",
+      "Protected Jack"
+    ],
+    [
+      "8cf20b34-07ab-4663-8656-bdfc6c9f5681",
+      "3P3V_ESP"
+    ],
+    [
+      "287f10a7-01f1-4936-963f-3ff9707361bf",
+      "6P2V"
+    ],
+    [
+      "bb820ff1-557a-45c9-9e7d-2cbe41a5a198",
+      "6P2V_PI_FILT"
+    ],
+    [
+      "76f0ed29-5709-4147-a1e0-6b5d52ec5483",
+      "M6P2V"
+    ],
+    [
+      "73161f4f-d25f-4867-9a50-09f705f94dd3",
+      "M6P2V_PI_FILT"
+    ],
+    [
+      "7092900b-5b77-4a43-9fb0-e142d3147a72",
+      "5V"
+    ],
+    [
+      "a486671e-07a2-4e0a-b44a-8752578a85eb",
+      "2P5V"
+    ],
+    [
+      "fb161aa1-8d14-4077-83fa-558fa9899872",
+      "M2P5V"
+    ],
+    [
+      "f3a245ed-b3ed-4c6e-aba2-7f5501b1e711",
+      "M5V"
+    ],
+    [
+      "787b38a8-8c73-433f-8a2f-7a0958899c1a",
+      "3P3V_TIMING"
     ]
   ],
   "text_variables": {},

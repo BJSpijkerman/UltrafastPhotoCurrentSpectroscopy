@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "LT8330") (type "KiCad") (uri "${KIPRJMOD}/symbolLibrary/ul_LT8330IS6-TRMPBF/KiCADv6/2026-11-20_12-34-52.kicad_sym") (options "") (descr ""))
+	(lib (name "BLM18PG121SN1") (type "KiCad") (uri "${KIPRJMOD}/symbolLibrary/ul_BLM18PG121SN1B/KiCADv6/2026-11-20_15-07-36.kicad_sym") (options "") (descr ""))
+)
