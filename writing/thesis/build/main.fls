@@ -243,5 +243,4 @@ INPUT tikz/CarrierTwoTemperatureModelData.csv
 INPUT ./chapters/photoCurrentSpectroscopy.tex
 INPUT ./chapters/photoCurrentSpectroscopy.tex
 INPUT chapters/photoCurrentSpectroscopy.tex
-INPUT /usr/share/texmf-dist/tex/latex/tools/.tex
 INPUT build/main.aux
