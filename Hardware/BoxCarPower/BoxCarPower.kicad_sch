@@ -543,7 +543,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43393396-da05-499f-a541-3f143161eb58")
-		(property "Reference" "J4"
+		(property "Reference" "R3_OUT1"
 			(at 217.17 56.1731 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -607,7 +607,7 @@
 		(instances
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e"
-					(reference "J4")
+					(reference "R3_OUT1")
 					(unit 1)
 				)
 			)
@@ -625,7 +625,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5396198c-74b6-4966-b80e-8c438cf7f5fc")
-		(property "Reference" "J3"
+		(property "Reference" "R2_OUT1"
 			(at 184.15 59.9831 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -689,7 +689,7 @@
 		(instances
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e"
-					(reference "J3")
+					(reference "R2_OUT1")
 					(unit 1)
 				)
 			)
@@ -1027,7 +1027,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dac97f52-ddbc-4c8e-bfba-9a9334244cbf")
-		(property "Reference" "J2"
+		(property "Reference" "R1_OUT1"
 			(at 144.78 40.9331 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1091,7 +1091,7 @@
 		(instances
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e"
-					(reference "J2")
+					(reference "R1_OUT1")
 					(unit 1)
 				)
 			)

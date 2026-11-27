@@ -1076,7 +1076,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48431e08-f60f-4456-92fd-4976bc428962")
-		(property "Reference" "L_output1"
+		(property "Reference" "R1_L_OUT1"
 			(at 140.97 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1144,7 +1144,7 @@
 			)
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/76e6fe2b-9ff2-4ba7-9437-413c6eeafd7e"
-					(reference "L_output1")
+					(reference "R1_L_OUT1")
 					(unit 1)
 				)
 			)
@@ -1162,7 +1162,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab0d676b-f64e-495a-994b-73b2afbbd28a")
-		(property "Reference" "C_input1"
+		(property "Reference" "R1_C_IN1"
 			(at 105.41 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1232,7 +1232,7 @@
 			)
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/76e6fe2b-9ff2-4ba7-9437-413c6eeafd7e"
-					(reference "C_input1")
+					(reference "R1_C_IN1")
 					(unit 1)
 				)
 			)
@@ -1250,7 +1250,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b79d1e69-460a-44fc-8c8f-b36370c1dfa6")
-		(property "Reference" "U1"
+		(property "Reference" "R1_BCK1"
 			(at 115.57 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1330,7 +1330,7 @@
 			)
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/76e6fe2b-9ff2-4ba7-9437-413c6eeafd7e"
-					(reference "U1")
+					(reference "R1_BCK1")
 					(unit 1)
 				)
 			)
@@ -1432,7 +1432,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d97a94e8-8dc3-4c00-b153-9d32608555e3")
-		(property "Reference" "C_FB1"
+		(property "Reference" "R1_C_FB1"
 			(at 129.54 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1500,7 +1500,7 @@
 			)
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/76e6fe2b-9ff2-4ba7-9437-413c6eeafd7e"
-					(reference "C_FB1")
+					(reference "R1_C_FB1")
 					(unit 1)
 				)
 			)
@@ -1518,7 +1518,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2ca2d4d-f1f6-49c8-a208-dfc69e130d4d")
-		(property "Reference" "C_out1"
+		(property "Reference" "R1_C_OUT1"
 			(at 149.86 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1588,7 +1588,7 @@
 			)
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/76e6fe2b-9ff2-4ba7-9437-413c6eeafd7e"
-					(reference "C_out1")
+					(reference "R1_C_OUT1")
 					(unit 1)
 				)
 			)
@@ -1606,7 +1606,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe7308f6-7e65-4110-ab6c-484cbb3f84a2")
-		(property "Reference" "C_out2"
+		(property "Reference" "R1_C_OUT2"
 			(at 163.83 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1676,7 +1676,7 @@
 			)
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/76e6fe2b-9ff2-4ba7-9437-413c6eeafd7e"
-					(reference "C_out2")
+					(reference "R1_C_OUT2")
 					(unit 1)
 				)
 			)

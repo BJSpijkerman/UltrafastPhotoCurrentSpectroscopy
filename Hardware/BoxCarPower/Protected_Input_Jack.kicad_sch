@@ -1154,13 +1154,23 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 101.6) (xy 121.92 101.6)
+			(xy 121.92 96.52) (xy 121.92 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "93a76a7f-3fac-47c5-aab6-d5dbaf31a06d")
+		(uuid "75d37a45-2df4-461c-9a5a-7567e219176b")
+	)
+	(wire
+		(pts
+			(xy 119.38 96.52) (xy 121.92 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88163f97-cabd-463d-a514-f1f3c64a7b2a")
 	)
 	(wire
 		(pts
@@ -1642,7 +1652,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 119.38 96.52 0)
+		(at 119.38 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1650,9 +1660,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "afb0277d-cb8a-4b5e-9a7d-1be02b3e79ea")
-		(property "Reference" "#PWR098"
-			(at 119.38 102.87 0)
+		(fields_autoplaced yes)
+		(uuid "9aaf91bd-f447-44d9-91ea-093ed66715f1")
+		(property "Reference" "#PWR0101"
+			(at 119.38 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1663,7 +1674,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.634 93.472 0)
+			(at 119.38 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1673,7 +1684,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 96.52 0)
+			(at 119.38 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1684,7 +1695,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 96.52 0)
+			(at 119.38 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1695,7 +1706,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 96.52 0)
+			(at 119.38 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1706,18 +1717,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a710e0cc-587c-408c-a250-a560d3e0a2d5")
+			(uuid "d7744e34-c4ee-40b0-8423-a2e03958bf78")
 		)
 		(instances
-			(project "BoxCarDesign"
-				(path "/50793efa-8006-4cd9-925a-71bd5e6e727a/f2724169-f5be-4651-80b0-4f9ab8b19d5c/aab1d566-81c0-43b4-8274-21f73f156e1f"
-					(reference "#PWR098")
-					(unit 1)
-				)
-			)
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/a12bd57c-5324-4beb-aad3-0c3dac1d2ed7"
-					(reference "#PWR098")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)

@@ -60,12 +60,12 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
+          "thermal_relief_gap": 0.0,
           "thermal_relief_spoke_width": 0.5
         }
       },
@@ -665,7 +665,7 @@
         "uuid": "de3abb47-19fa-4d91-b0b9-74d48bf6a33e"
       }
     ],
-    "used_designators": "#PWR1-25,#PWR112-117,C1-18,C45-48,C_FB1,C_input1,C_out1-2,D1-2,J1-6,L1-3,L5-6,L_output1,Q1,R1-14,U1-7",
+    "used_designators": "#PWR1-25,#PWR101,#PWR112-117,C1-18,C45-48,C_FB1,C_input1,C_out1-2,D1-2,J1-6,L1-3,L5-6,L_output1,PRE_BCK1,PRE_C_BP1,PRE_C_IN1,Q1,R1-14,R1_BCK1,R1_C_IN1,R1_L_OUT1,R1_OUT1,R2_C_IN1,R2_C_OUT1,R2_C_SET1,R2_FB1,R2_FB_C_IN1,R2_FB_C_OUT1,R2_LDO1,R2_OUT1,R2_R_SET1,R3_C_IN1,R3_C_OUT1,R3_LDO1,R3_OUT1,U1-7",
     "variants": []
   },
   "sheets": [

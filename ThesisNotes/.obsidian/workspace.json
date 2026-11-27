@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental Setup/Electrical Detection/Power circuit/AP63203.md",
+                "file": "Daily log/27-11-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AP63203"
+              "title": "27-11-2026"
             }
           }
         ],
@@ -202,8 +202,10 @@
   },
   "active": "a5be5aba90c17097",
   "lastOpenFiles": [
-    "Experimental Setup/Electrical Detection/Datasheets/74LVC1G123.md",
+    "img/elecricalDetection/PowerCircuitplacement1.png",
     "Experimental Setup/Electrical Detection/Power circuit/AP63203.md",
+    "Daily log/27-11-2026.md",
+    "Experimental Setup/Electrical Detection/Datasheets/74LVC1G123.md",
     "Daily log/10-11-2026.md",
     "Experimental Setup/Electrical Detection/Power circuit",
     "Daily log/9-11-2026.md",
@@ -232,8 +234,6 @@
     "Experimental Control/LabControl/Devices/Stage.py.md",
     "Experimental Control/LabControl/Devices/LockIn.py.md",
     "Tasks.md",
-    "Physics notes/Auger recombination.md",
-    "Experimental Setup/Electrical Detection/Trigger generation.md",
     "img/mountingPlate/Screenshot_20261110_085749.png",
     "img/mountingPlate",
     "img/TTM_NLM/TTMresultResistivity.png",

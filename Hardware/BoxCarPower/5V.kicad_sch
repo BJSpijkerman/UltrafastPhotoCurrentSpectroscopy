@@ -1023,7 +1023,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2adc2c80-336c-4db1-a944-4858801cb935")
-		(property "Reference" "C5"
+		(property "Reference" "R2_C_SET1"
 			(at 113.03 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1087,7 +1087,7 @@
 		(instances
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/cf1b7543-1474-45e7-8764-423a5d7e93c3"
-					(reference "C5")
+					(reference "R2_C_SET1")
 					(unit 1)
 				)
 			)
@@ -1105,7 +1105,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fbd023c-4683-4716-b4c7-0e27a7cd6a91")
-		(property "Reference" "R6"
+		(property "Reference" "R2_R_SET1"
 			(at 120.65 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1169,7 +1169,7 @@
 		(instances
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/cf1b7543-1474-45e7-8764-423a5d7e93c3"
-					(reference "R6")
+					(reference "R2_R_SET1")
 					(unit 1)
 				)
 			)
@@ -1187,7 +1187,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c3f942e-1256-4dd8-aa4a-df0be955b9cf")
-		(property "Reference" "C10"
+		(property "Reference" "R2_C_IN1"
 			(at 95.25 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1251,7 +1251,7 @@
 		(instances
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/cf1b7543-1474-45e7-8764-423a5d7e93c3"
-					(reference "C10")
+					(reference "R2_C_IN1")
 					(unit 1)
 				)
 			)
@@ -1659,7 +1659,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e12368b1-3802-4afe-9d9c-d61b8ff3c845")
-		(property "Reference" "C4"
+		(property "Reference" "R2_C_OUT1"
 			(at 161.29 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1723,7 +1723,7 @@
 		(instances
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/cf1b7543-1474-45e7-8764-423a5d7e93c3"
-					(reference "C4")
+					(reference "R2_C_OUT1")
 					(unit 1)
 				)
 			)
@@ -1741,7 +1741,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6d0d4b0-13ca-4230-8008-bb04399e144c")
-		(property "Reference" "U3"
+		(property "Reference" "R2_LDO1"
 			(at 133.35 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1836,7 +1836,7 @@
 		(instances
 			(project "BoxCarPower"
 				(path "/de3abb47-19fa-4d91-b0b9-74d48bf6a33e/cf1b7543-1474-45e7-8764-423a5d7e93c3"
-					(reference "U3")
+					(reference "R2_LDO1")
 					(unit 1)
 				)
 			)
